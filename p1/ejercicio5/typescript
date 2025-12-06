@@ -1,0 +1,933 @@
+Script started on 2025-10-10 12:38:26+02:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="120" LINES="30"]
+[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio5[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio5[00m$ nano nombres.txt [K./script.sh
+[?2004lbash: ./script.sh: Permission denied
+[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio5[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio5[00m$ ./script.sh[1Pscript.sh[1Pscript.sh
+[?2004lscript.sh: command not found
+[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio5[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio5[00m$ chmod +x script.sh 
+[?2004l[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio5[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio5[00m$ ls -l script.sh 
+[?2004l-rwxr-xr-x 1 david david 77 Oct 10 12:35 [0m[01;32mscript.sh[0m
+[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio5[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio5[00m$ ./script.sh 
+[?2004lHola, A!
+Hola, B!
+Hola, C!
+Hola, D!
+Hola, E!
+[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio5[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio5[00m$ nano script.sh 
+[?2004l[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;54H(B[0;7m[ Reading... ](B[m[28;53H(B[0;7m[ Read 7 lines ](B[m[H(B[0;7m  GNU nano 7.2                                            script.sh                                                     [1;119H(B[m[29d(B[0;7m^G(B[m Help[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[29;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[30d(B[0;7m^X(B[m Exit[30;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[2d[36m#!/bin/bash[4d[32mwhile[39m(B[m [32mread[39m(B[m nombre[32m;do[6;9H(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Hola, $nombre!"[8d(B[0m[32mdone[39m(B[m [32m<[39m(B[mnombres.txt[2d[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25h[4d[?25l[?12l[?25h[5d[?25l[?12l[?25h[6d[?25l[?12l[?25h[6;9H[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h [?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[28d[K[?12l[?25h[6;24H[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[7d[?25l[?12l[?25h[8d[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[A[?25l[?12l[?25h[6;30H[?25l[1;69H(B[0;7m*[119G(B[m[?12l[?25h[6;30H[42m [49m(B[m[?25l[?12l[?25h [32m>[39m(B[m[?25l[?12l[?25h[32m>[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h s[?25l[?12l[?25ha[?25l[?12l[?25hl[?25l[?12l[?25hu[?25l[?12l[?25h2[?25l[?12l[?25h.[?25l[?12l[?25ht[?25l[?12l[?25hx[?25l[?12l[?25ht[?25l7[7;28r8[7dM[1;30r[7;1H[?12l[?25h[?25l[7;28r[28;1H
+[1;30r[6;43H[?12l[?25h[?25l[28d(B[0;7mSave modified buffer?                                                                                                   [29;1H Y(B[m Yes[K[30d(B[0;7m N(B[m No  [30;16H (B[0;7m^C(B[m Cancel[K[28;23H[?12l[?25h[?25l[29d(B[0;7m^G(B[m Help[29;31H(B[0;7mM-D(B[m DOS Format[29;61H(B[0;7mM-A(B[m Append[29;91H(B[0;7mM-B(B[m Backup File[30d(B[0;7m^C(B[m Cancel[17G[14X[30;31H(B[0;7mM-M(B[m Mac Format[30;61H(B[0;7mM-P(B[m Prepend[30;91H(B[0;7m^T(B[m Browse[28d(B[0;7mFile Name to Write: script.sh(B[m[?12l[?25h[?25l[28;53H[1K (B[0;7m[ Writing... ](B[m[K[1;69H(B[0;7m [119G(B[m[28;52H(B[0;7m[ Wrote 7 lines ](B[m[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio5[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio5[00m$ nano script.sh [3P./[C[C[C[C[C[C[C[C[C[C
+[?2004l[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio5[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio5[00m$ ls
+[?2004lnombres.txt  salu2.txt  [0m[01;32mscript.sh[0m  typescript
+[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio5[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio5[00m$ nano salu2.txt 
+[?2004l[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;54H(B[0;7m[ Reading... ](B[m[28;53H(B[0;7m[ Read 5 lines ](B[m[H(B[0;7m  GNU nano 7.2                                            salu2.txt                                                     [1;119H(B[m[29d(B[0;7m^G(B[m Help[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[29;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[30d(B[0;7m^X(B[m Exit[30;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[2dHola, A![3dHola, B![4dHola, C![5dHola, D![6dHola, E![2d[?12l[?25h[?25l[28d[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio5[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio5[00m$ nano script.sh 
+[?2004l[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;54H(B[0;7m[ Reading... ](B[m[28;53H(B[0;7m[ Read 7 lines ](B[m[H(B[0;7m  GNU nano 7.2                                            script.sh                                                     [1;119H(B[m[29d(B[0;7m^G(B[m Help[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[29;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[30d(B[0;7m^X(B[m Exit[30;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[2d[36m#!/bin/bash[4d[32mwhile[39m(B[m [32mread[39m(B[m nombre[32m;do[6;9H(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Hola, $nombre!"[39m(B[m [32m>>[39m(B[m salu2.txt[8d[32mdone[39m(B[m [32m<[39m(B[mnombres.txt[2d[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25h[4d[?25l[?12l[?25h[5d[?25l[?12l[?25h[6d[?25l[?12l[?25h[7d[?25l[?12l[?25h[8d[?25l[?12l[?25h[9d[?25l[?12l[?25h[?25l[1;69H(B[0;7m*[119G(B[m[?12l[?25h[9d[42m [49m(B[m[?25l[?12l[?25h[K[?25l[10d[?12l[?25h[?25l[?12l[?25h[36m#[39m(B[m[?25l[?12l[?25h[36m![39m(B[m[?25l[?12l[?25h[36mF[39m(B[m[?25l[?12l[?25h[36mi[39m(B[m[?25l[?12l[?25h[36mn[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h[36m s[39m(B[m[?25l[?12l[?25h[36mc[39m(B[m[?25l[28d[K[?12l[?25h[10;9H[36mr[39m(B[m[?25l[?12l[?25h[36mi[39m(B[m[?25l[?12l[?25h[36mp[39m(B[m[?25l[?12l[?25h[36mt[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h[36m d[39m(B[m[?25l[?12l[?25h[36me[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h[36m p[39m(B[m[?25l[?12l[?25h[36mr[39m(B[m[?25l[?12l[?25h[36mu[39m(B[m[?25l[?12l[?25h[36me[39m(B[m[?25l[?12l[?25h[36mb[39m(B[m[?25l[?12l[?25h[36ma[39m(B[m[?25l[28d(B[0;7mSave modified buffer?                                                                                                   [29;1H Y(B[m Yes[K[30d(B[0;7m N(B[m No  [30;16H (B[0;7m^C(B[m Cancel[K[28;23H[?12l[?25h[?25l[29d(B[0;7m^G(B[m Help[29;31H(B[0;7mM-D(B[m DOS Format[29;61H(B[0;7mM-A(B[m Append[29;91H(B[0;7mM-B(B[m Backup File[30d(B[0;7m^C(B[m Cancel[17G[14X[30;31H(B[0;7mM-M(B[m Mac Format[30;61H(B[0;7mM-P(B[m Prepend[30;91H(B[0;7m^T(B[m Browse[28d(B[0;7mFile Name to Write: script.sh(B[m[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l(B[0;7m1.sh(B[m[?12l[?25h[?25l(B[0;7mSave file under DIFFERENT NAME?[29d Y(B[m Yes[K[30d(B[0;7m N(B[m No    [17G(B[0;7m^C(B[m Cancel[K[28;33H[?12l[?25h[?25l[28;53H[1K (B[0;7m[ Writing... ](B[m[K[1;58H(B[0;7mscript1.sh  [119G(B[m[28;52H(B[0;7m[ Wrote 9 lines ](B[m[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio5[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio5[00m$ ls
+[?2004lnombres.txt  salu2.txt  [0m[01;32mscript.sh[0m  script1.sh  typescript
+[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio5[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio5[00m$ rm script.sh 
+[?2004l[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio5[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio5[00m$ ./script1.sh
+[?2004lbash: ./script1.sh: Permission denied
+[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio5[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio5[00m$ chmod script1.sh
+[?2004lchmod: missing operand after ‘script1.sh’
+Try 'chmod --help' for more information.
+[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio5[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio5[00m$ chmod script1.sh+script1.shxscript1.sh script1.sh
+[?2004l[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio5[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio5[00m$ chmod +x script1.sh[3Pscript1.sh[4P./script1.sh
+[?2004l[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio5[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio5[00m$ ls
+[?2004lnombres.txt  salu2.txt  [0m[01;32mscript1.sh[0m  typescript
+[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio5[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio5[00m$ echo '[K"#!/bin/bash" >> scri[K[K[K[Ksh_pswd.sh
+[?2004lbash: !/bin/bash: event not found
+[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio5[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio5[00m$ ls./script1.shchmod +x script1.sh[3Pscript1.sh[4P./script1.shchmod script1.sh+x script1.sh[7P./script1.shls[K./script1.shchmod +x script1.sh[3Pscript1.sh+x script1.sh[7P./script1.shls[K[Kls./script1.shchmod +x script1.sh[3Pscript1.sh[4P./script1.shrm script.sh ls[K[K[K[7m echo "#!/bin/bash" >> sh_pswd.sh[27m echo "#!/bin/bash" >> sh_pswd.sh[1P[1@'[C[C[C[C[C[C[1P[1@'
+[?2004l[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio5[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio5[00m$ ls
+[?2004lnombres.txt  salu2.txt  [0m[01;32mscript1.sh[0m  sh_pswd.sh  typescript
+[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio5[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio5[00m$ nano sg[Kh_pswd.sh 
+[?2004l[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;54H(B[0;7m[ Reading... ](B[m[28;53H(B[0;7m[ Read 1 line ](B[m[H(B[0;7m  GNU nano 7.2                                           sh_pswd.sh                                                     [1;119H(B[m[29d(B[0;7m^G(B[m Help[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[29;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[30d(B[0;7m^X(B[m Exit[30;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[2d[36m#!/bin/bash[39m(B[m[?12l[?25h[?25l[?12l[?25h[3d[?25l[1;69H(B[0;7m*[119G(B[m[4d[?12l[?25h[?25l[?12l[?25hw[?25l[?12l[?25hh[?25l[?12l[?25hi[?25l[?12l[?25hl[?25l[?12l[?25h[32mwhile[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h I[?25l[?12l[?25hF[?25l[?12l[?25hS[?25l[?12l[?25h[32m=[39m(B[m[?25l[?12l[?25h'[?25l[?12l[?25h[32m:[39m(B[m[?25l[?12l[?25h(B[0;1m[33m':'[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h r[?25l[?12l[?25he[?25l[?12l[?25ha[?25l[28d[K[?12l[?25h[4;15H[32mread[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h v[?25l[?12l[?25ha[?25l[?12l[?25hr[?25l[?12l[?25h1[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h v[?25l[?12l[?25ha[?25l[?12l[?25hr[?25l[?12l[?25h2[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h v[?25l[?12l[?25ha[?25l[?12l[?25hr[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h 3[?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h3[?25l[?12l[?25h[32m;[39m(B[m[?25l[5d[?12l[?25h[?25l[?12l[?25h[8G[42m[1K [49m(B[m[?25l[6d[?12l[?25h[?25l[?12l[?25h[8G[42m[1K [49m(B[m[?25l[?12l[?25h[K[?25l[5;9H[?12l[?25h[?25l[?12l[?25h[K[?25l[?12l[?25hd[?25l[?12l[?25h[32mdo[39m(B[m[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[?12l[?25h[8G[42m[1K [49m(B[m[?25l[?12l[?25h[1K e[?25l[?12l[?25hc[?25l[?12l[?25hh[?25l[?12l[?25h(B[0;1m[34mecho[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h "[?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h '[?25l[?12l[?25h[32m|[39m(B[m[?25l[?12l[?25hv[?25l[?12l[?25ha[?25l[?12l[?25hr[?25l[?12l[?25h1[?25l[?12l[?25h[32m|[39m(B[m[?25l[?12l[?25h[16G[?25l[?12l[?25h(B[0;1m[31m$var1(B[0m[32m|[17G[39m(B[m[?25l[?12l[?25h[8d[?25l[?12l[?25h[?25l[?12l[?25h[7;17H[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[32m$[39m(B[m[?25l[?12l[?25h(B[0;1m[31m$v[39m(B[m[?25l[?12l[?25h(B[0;1m[31ma[39m(B[m[?25l[?12l[?25h(B[0;1m[31mr[39m(B[m[?25l[?12l[?25h(B[0;1m[31m2[39m(B[m[?25l[?12l[?25h[32m\[39m(B[m[?25l[?12l[?25h [?25l[?12l[?25h[32m|[39m(B[m[?25l[?12l[?25h[32m$[39m(B[m[?25l[?12l[?25h(B[0;1m[31m$v[39m(B[m[?25l[?12l[?25h(B[0;1m[31ma[39m(B[m[?25l[?12l[?25h(B[0;1m[31mr[39m(B[m[?25l[?12l[?25h(B[0;1m[31m3[39m(B[m[?25l[?12l[?25h[32m|[39m(B[m[?25l[?12l[?25h[32m\[39m(B[m[?25l[?12l[?25hn[?25l[?12l[?25h[7;14H(B[0;1m[33m'|$var1|$var2|$var3|\n'[39m(B[m[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h(B[0;1m[33m \n'[39m(B[m[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h(B[0;1m[33m '[39m(B[m[?25l[?12l[?25h[C[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[?12l[?25hd[?25l[?12l[?25h[32mdo[39m(B[m[?25l[?12l[?25hdon[?25l[?12l[?25h[32mdone[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h [32m<[39m(B[m[?25l[?12l[?25h/[?25l[?12l[?25he[?25l[?12l[?25ht[?25l[?12l[?25hc[?25l[?12l[?25h/[?25l[?12l[?25hp[?25l[?12l[?25ha[?25l[?12l[?25hs[?25l[?12l[?25hs[?25l[?12l[?25hw[?25l[?12l[?25hd[?25l[10d[?12l[?25h[?25l[28d(B[0;7mSave modified buffer?                                                                                                   [29;1H Y(B[m Yes[K[30d(B[0;7m N(B[m No  [30;16H (B[0;7m^C(B[m Cancel[K[28;23H[?12l[?25h[?25l[29d(B[0;7m^G(B[m Help[29;31H(B[0;7mM-D(B[m DOS Format[29;61H(B[0;7mM-A(B[m Append[29;91H(B[0;7mM-B(B[m Backup File[30d(B[0;7m^C(B[m Cancel[17G[14X[30;31H(B[0;7mM-M(B[m Mac Format[30;61H(B[0;7mM-P(B[m Prepend[30;91H(B[0;7m^T(B[m Browse[28d(B[0;7mFile Name to Write: sh_pswd.sh(B[m[?12l[?25h[?25l[28;53H[1K (B[0;7m[ Writing... ](B[m[K[1;69H(B[0;7m [119G(B[m[28;52H(B[0;7m[ Wrote 9 lines ](B[m[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio5[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio5[00m$ chmod sh_p+sh_pxsh_p sh_p[C[C[C[Cswd.sh 
+[?2004l[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio5[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio5[00m$ ./sh_pswd.sh 
+[?2004l|$var1|$var2|$var3| \n 
+|$var1|$var2|$var3| \n 
+|$var1|$var2|$var3| \n 
+|$var1|$var2|$var3| \n 
+|$var1|$var2|$var3| \n 
+|$var1|$var2|$var3| \n 
+|$var1|$var2|$var3| \n 
+|$var1|$var2|$var3| \n 
+|$var1|$var2|$var3| \n 
+|$var1|$var2|$var3| \n 
+|$var1|$var2|$var3| \n 
+|$var1|$var2|$var3| \n 
+|$var1|$var2|$var3| \n 
+|$var1|$var2|$var3| \n 
+|$var1|$var2|$var3| \n 
+|$var1|$var2|$var3| \n 
+|$var1|$var2|$var3| \n 
+|$var1|$var2|$var3| \n 
+|$var1|$var2|$var3| \n 
+|$var1|$var2|$var3| \n 
+|$var1|$var2|$var3| \n 
+|$var1|$var2|$var3| \n 
+|$var1|$var2|$var3| \n 
+|$var1|$var2|$var3| \n 
+|$var1|$var2|$var3| \n 
+|$var1|$var2|$var3| \n 
+|$var1|$var2|$var3| \n 
+|$var1|$var2|$var3| \n 
+[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio5[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio5[00m$ nano sh_pswd.sh 
+[?2004l[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;54H(B[0;7m[ Reading... ](B[m[28;53H(B[0;7m[ Read 9 lines ](B[m[H(B[0;7m  GNU nano 7.2                                           sh_pswd.sh                                                     [1;119H(B[m[29d(B[0;7m^G(B[m Help[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[29;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[30d(B[0;7m^X(B[m Exit[30;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[2d[36m#!/bin/bash[4d[32mwhile[39m(B[m IFS[32m=(B[0;1m[33m':'[39m(B[m [32mread[39m(B[m var1 var2 var3[32m;[5ddo[7;9H(B[0;1m[34mecho[39m(B[m (B[0;1m[33m'|$var1|$var2|$var3| \n '[9d(B[0m[32mdone[39m(B[m [32m<[39m(B[m/etc/passwd[2d[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25h[4d[?25l[?12l[?25h[5d[?25l[?12l[?25h[6d[?25l[?12l[?25h[7d[?25l[?12l[?25h[7;9H[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h [?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[1;69H(B[0;7m*[119G(B[m[?12l[?25h[7;16H(B[0;1m[33m'[31m$var1(B[0m[32m|(B[0;1m[31m$var2(B[0m[32m|(B[0;1m[31m$var3(B[0m[32m|[39m(B[m [32m\[39m(B[mn '[7;17H[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[28d[K[?12l[?25h[7;22H(B[0;1m[33m'|$var2|$var3| \n '[7;23H[39m(B[m[?25l[?12l[?25h[C[?25l[?12l[?25h(B[0;1m[33m'[31m$var2(B[0m[32m|(B[0;1m[31m$var3(B[0m[32m|[39m(B[m [32m\[39m(B[mn '[7;25H[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[?25l[?12l[?25h¡[32m|(B[0;1m[31m$var3(B[0m[32m|[39m(B[m [32m\[39m(B[mn '[7;31H[?25l[?12l[?25h[1P[?25l[?12l[?25h(B[0;1m[33m'|$var3| \n '[7;31H[39m(B[m[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[?25l[?12l[?25h(B[0;1m[33m'[31m$var3(B[0m[32m|[39m(B[m [32m\[39m(B[mn '[7;33H[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[?25l[?12l[?25h(B[0;1m[33m'| \n '[39G[39m(B[m[?25l[?12l[?25h[C[?25l[?12l[?25h(B[0;1m[33m'[39m(B[m [32m\[39m(B[mn '[41G[?25l[?12l[?25h [?25l[?12l[?25h(B[0;1m[33m'\n '[39m(B[m[?25l[?12l[?25h(B[0;1m[33m \n '[39m(B[m[?25l[28d(B[0;7mSave modified buffer?                                                                                                   [29;1H Y(B[m Yes[K[30d(B[0;7m N(B[m No  [30;16H (B[0;7m^C(B[m Cancel[K[28;23H[?12l[?25h[?25l[29d(B[0;7m^G(B[m Help[29;31H(B[0;7mM-D(B[m DOS Format[29;61H(B[0;7mM-A(B[m Append[29;91H(B[0;7mM-B(B[m Backup File[30d(B[0;7m^C(B[m Cancel[17G[14X[30;31H(B[0;7mM-M(B[m Mac Format[30;61H(B[0;7mM-P(B[m Prepend[30;91H(B[0;7m^T(B[m Browse[28d(B[0;7mFile Name to Write: sh_pswd.sh(B[m[?12l[?25h[?25l[28;53H[1K (B[0;7m[ Writing... ](B[m[K[1;69H(B[0;7m [119G(B[m[28;52H(B[0;7m[ Wrote 9 lines ](B[m[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio5[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio5[00m$ nano sh_pswd.sh [3P./[C[C[C[C[C[C[C[C[C[C[C
+[?2004l|root|x|0:0:root:/root:/bin/bash|  \n 
+|daemon|x|1:1:daemon:/usr/sbin:/usr/sbin/nologin|  \n 
+|bin|x|2:2:bin:/bin:/usr/sbin/nologin|  \n 
+|sys|x|3:3:sys:/dev:/usr/sbin/nologin|  \n 
+|sync|x|4:65534:sync:/bin:/bin/sync|  \n 
+|games|x|5:60:games:/usr/games:/usr/sbin/nologin|  \n 
+|man|x|6:12:man:/var/cache/man:/usr/sbin/nologin|  \n 
+|lp|x|7:7:lp:/var/spool/lpd:/usr/sbin/nologin|  \n 
+|mail|x|8:8:mail:/var/mail:/usr/sbin/nologin|  \n 
+|news|x|9:9:news:/var/spool/news:/usr/sbin/nologin|  \n 
+|uucp|x|10:10:uucp:/var/spool/uucp:/usr/sbin/nologin|  \n 
+|proxy|x|13:13:proxy:/bin:/usr/sbin/nologin|  \n 
+|www-data|x|33:33:www-data:/var/www:/usr/sbin/nologin|  \n 
+|backup|x|34:34:backup:/var/backups:/usr/sbin/nologin|  \n 
+|list|x|38:38:Mailing List Manager:/var/list:/usr/sbin/nologin|  \n 
+|irc|x|39:39:ircd:/run/ircd:/usr/sbin/nologin|  \n 
+|_apt|x|42:65534::/nonexistent:/usr/sbin/nologin|  \n 
+|nobody|x|65534:65534:nobody:/nonexistent:/usr/sbin/nologin|  \n 
+|systemd-network|x|998:998:systemd Network Management:/:/usr/sbin/nologin|  \n 
+|systemd-timesync|x|996:996:systemd Time Synchronization:/:/usr/sbin/nologin|  \n 
+|dhcpcd|x|100:65534:DHCP Client Daemon,,,:/usr/lib/dhcpcd:/bin/false|  \n 
+|messagebus|x|101:101::/nonexistent:/usr/sbin/nologin|  \n 
+|syslog|x|102:102::/nonexistent:/usr/sbin/nologin|  \n 
+|systemd-resolve|x|991:991:systemd Resolver:/:/usr/sbin/nologin|  \n 
+|uuidd|x|103:103::/run/uuidd:/usr/sbin/nologin|  \n 
+|landscape|x|104:105::/var/lib/landscape:/usr/sbin/nologin|  \n 
+|polkitd|x|990:990:User for polkitd:/:/usr/sbin/nologin|  \n 
+|david|x|1000:1000:,,,:/home/david:/bin/bash|  \n 
+[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio5[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio5[00m$ echo /etc/passwd
+[?2004l/etc/passwd
+[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio5[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio5[00m$ cd ../ejercicio4/
+[?2004l[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio4[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio4[00m$ ls
+[?2004lMakefile  defs.h  passwd  show-passwd.c
+[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio4[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio4[00m$ make
+[?2004lgcc -c -Wall -g show-passwd.c -o show-passwd.o
+gcc -g -o show-passwd show-passwd.o
+[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio4[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio4[00m$ ls
+[?2004lMakefile  defs.h  passwd  [0m[01;32mshow-passwd[0m  show-passwd.c  show-passwd.o
+[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio4[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio4[00m$ ./show-passwd 
+[?2004lDEBUG: Abriendo archivo: /etc/passwd
+[Entry #0]
+	login=root
+	enc_pass=x
+	uid=0
+	gid=0
+	user_name=root
+	home=/root
+	shell=/bin/bash
+[Entry #1]
+	login=daemon
+	enc_pass=x
+	uid=1
+	gid=1
+	user_name=daemon
+	home=/usr/sbin
+	shell=/usr/sbin/nologin
+[Entry #2]
+	login=bin
+	enc_pass=x
+	uid=2
+	gid=2
+	user_name=bin
+	home=/bin
+	shell=/usr/sbin/nologin
+[Entry #3]
+	login=sys
+	enc_pass=x
+	uid=3
+	gid=3
+	user_name=sys
+	home=/dev
+	shell=/usr/sbin/nologin
+[Entry #4]
+	login=sync
+	enc_pass=x
+	uid=4
+	gid=65534
+	user_name=sync
+	home=/bin
+	shell=/bin/sync
+[Entry #5]
+	login=games
+	enc_pass=x
+	uid=5
+	gid=60
+	user_name=games
+	home=/usr/games
+	shell=/usr/sbin/nologin
+[Entry #6]
+	login=man
+	enc_pass=x
+	uid=6
+	gid=12
+	user_name=man
+	home=/var/cache/man
+	shell=/usr/sbin/nologin
+[Entry #7]
+	login=lp
+	enc_pass=x
+	uid=7
+	gid=7
+	user_name=lp
+	home=/var/spool/lpd
+	shell=/usr/sbin/nologin
+[Entry #8]
+	login=mail
+	enc_pass=x
+	uid=8
+	gid=8
+	user_name=mail
+	home=/var/mail
+	shell=/usr/sbin/nologin
+[Entry #9]
+	login=news
+	enc_pass=x
+	uid=9
+	gid=9
+	user_name=news
+	home=/var/spool/news
+	shell=/usr/sbin/nologin
+[Entry #10]
+	login=uucp
+	enc_pass=x
+	uid=10
+	gid=10
+	user_name=uucp
+	home=/var/spool/uucp
+	shell=/usr/sbin/nologin
+[Entry #11]
+	login=proxy
+	enc_pass=x
+	uid=13
+	gid=13
+	user_name=proxy
+	home=/bin
+	shell=/usr/sbin/nologin
+[Entry #12]
+	login=www-data
+	enc_pass=x
+	uid=33
+	gid=33
+	user_name=www-data
+	home=/var/www
+	shell=/usr/sbin/nologin
+[Entry #13]
+	login=backup
+	enc_pass=x
+	uid=34
+	gid=34
+	user_name=backup
+	home=/var/backups
+	shell=/usr/sbin/nologin
+[Entry #14]
+	login=list
+	enc_pass=x
+	uid=38
+	gid=38
+	user_name=Mailing List Manager
+	home=/var/list
+	shell=/usr/sbin/nologin
+[Entry #15]
+	login=irc
+	enc_pass=x
+	uid=39
+	gid=39
+	user_name=ircd
+	home=/run/ircd
+	shell=/usr/sbin/nologin
+[Entry #16]
+	login=_apt
+	enc_pass=x
+	uid=42
+	gid=65534
+	user_name=
+	home=/nonexistent
+	shell=/usr/sbin/nologin
+[Entry #17]
+	login=nobody
+	enc_pass=x
+	uid=65534
+	gid=65534
+	user_name=nobody
+	home=/nonexistent
+	shell=/usr/sbin/nologin
+[Entry #18]
+	login=systemd-network
+	enc_pass=x
+	uid=998
+	gid=998
+	user_name=systemd Network Management
+	home=/
+	shell=/usr/sbin/nologin
+[Entry #19]
+	login=systemd-timesync
+	enc_pass=x
+	uid=996
+	gid=996
+	user_name=systemd Time Synchronization
+	home=/
+	shell=/usr/sbin/nologin
+[Entry #20]
+	login=dhcpcd
+	enc_pass=x
+	uid=100
+	gid=65534
+	user_name=DHCP Client Daemon,,,
+	home=/usr/lib/dhcpcd
+	shell=/bin/false
+[Entry #21]
+	login=messagebus
+	enc_pass=x
+	uid=101
+	gid=101
+	user_name=
+	home=/nonexistent
+	shell=/usr/sbin/nologin
+[Entry #22]
+	login=syslog
+	enc_pass=x
+	uid=102
+	gid=102
+	user_name=
+	home=/nonexistent
+	shell=/usr/sbin/nologin
+[Entry #23]
+	login=systemd-resolve
+	enc_pass=x
+	uid=991
+	gid=991
+	user_name=systemd Resolver
+	home=/
+	shell=/usr/sbin/nologin
+[Entry #24]
+	login=uuidd
+	enc_pass=x
+	uid=103
+	gid=103
+	user_name=
+	home=/run/uuidd
+	shell=/usr/sbin/nologin
+[Entry #25]
+	login=landscape
+	enc_pass=x
+	uid=104
+	gid=105
+	user_name=
+	home=/var/lib/landscape
+	shell=/usr/sbin/nologin
+[Entry #26]
+	login=polkitd
+	enc_pass=x
+	uid=990
+	gid=990
+	user_name=User for polkitd
+	home=/
+	shell=/usr/sbin/nologin
+[Entry #27]
+	login=david
+	enc_pass=x
+	uid=1000
+	gid=1000
+	user_name=,,,
+	home=/home/david
+	shell=/bin/bash
+[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio4[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio4[00m$ ./show-passwd -p
+[?2004lDEBUG: Abriendo archivo: /etc/passwd
+|root|x|0|0|root|/root|/bin/bash|
+|daemon|x|1|1|daemon|/usr/sbin|/usr/sbin/nologin|
+|bin|x|2|2|bin|/bin|/usr/sbin/nologin|
+|sys|x|3|3|sys|/dev|/usr/sbin/nologin|
+|sync|x|4|65534|sync|/bin|/bin/sync|
+|games|x|5|60|games|/usr/games|/usr/sbin/nologin|
+|man|x|6|12|man|/var/cache/man|/usr/sbin/nologin|
+|lp|x|7|7|lp|/var/spool/lpd|/usr/sbin/nologin|
+|mail|x|8|8|mail|/var/mail|/usr/sbin/nologin|
+|news|x|9|9|news|/var/spool/news|/usr/sbin/nologin|
+|uucp|x|10|10|uucp|/var/spool/uucp|/usr/sbin/nologin|
+|proxy|x|13|13|proxy|/bin|/usr/sbin/nologin|
+|www-data|x|33|33|www-data|/var/www|/usr/sbin/nologin|
+|backup|x|34|34|backup|/var/backups|/usr/sbin/nologin|
+|list|x|38|38|Mailing List Manager|/var/list|/usr/sbin/nologin|
+|irc|x|39|39|ircd|/run/ircd|/usr/sbin/nologin|
+|_apt|x|42|65534||/nonexistent|/usr/sbin/nologin|
+|nobody|x|65534|65534|nobody|/nonexistent|/usr/sbin/nologin|
+|systemd-network|x|998|998|systemd Network Management|/|/usr/sbin/nologin|
+|systemd-timesync|x|996|996|systemd Time Synchronization|/|/usr/sbin/nologin|
+|dhcpcd|x|100|65534|DHCP Client Daemon,,,|/usr/lib/dhcpcd|/bin/false|
+|messagebus|x|101|101||/nonexistent|/usr/sbin/nologin|
+|syslog|x|102|102||/nonexistent|/usr/sbin/nologin|
+|systemd-resolve|x|991|991|systemd Resolver|/|/usr/sbin/nologin|
+|uuidd|x|103|103||/run/uuidd|/usr/sbin/nologin|
+|landscape|x|104|105||/var/lib/landscape|/usr/sbin/nologin|
+|polkitd|x|990|990|User for polkitd|/|/usr/sbin/nologin|
+|david|x|1000|1000|,,,|/home/david|/bin/bash|
+[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio4[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio4[00m$ ./show-passwd -p[Kls[Kmake[2Plscd ../ejercicio4/[1Pecho /etc/passwd[3P./sh_pswd.sh [3@nano [C[C[C[C[C[C[C[C[C[C[C[3P./[C[C[C[C[C[C[C[C[C[C[C[7@chmod +x [C[C[C[C[C[C[C[C[C[C[C[4Pnano[C[C[C[C[C[C[C[C[C[C[C[Cls[K./script1.shls[Knano sh_pswd.sh [4@chmod +x[C[C[C[C[C[C[C[C[C[C[C[C[7P./[C[C[C[C[C[C[C[C[C[C[C[3@nano [C[C[C[C[C[C[C[C[C[C[C[3P./[C[C[C[C[C[C[C[C[C[C[Cecho /etc/passwdcd ../ejercicio4/ls[Kmake[2Pls./show-passwd -p[Knao[Kno et[K[K/etc/passwd
+[?2004l[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;43H(B[0;1m[37m[41m[ Directory '/etc' is not writable ][39;49m(B[m[28;45H(B[0;1m[37m[41mFile '/etc/passwd' is un[28;79H[39;49m(B[m[H(B[0;7m  GNU nano 7.2                                           /etc/passwd                                                    [1;119H(B[m[29d(B[0;7m^G(B[m Help[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[29;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[30d(B[0;7m^X(B[m Exit[30;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[2droot:x:0:0:root:/root:/bin/bash[3ddaemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin[4dbin:x:2:2:bin:/bin:/usr/sbin/nologin[5dsys:x:3:3:sys:/dev:/usr/sbin/nologin[6dsync:x:4:65534:sync:/bin:/bin/sync[7dgames:x:5:60:games:/usr/games:/usr/sbin/nologin[8dman:x:6:12:man:/var/cache/man:/usr/sbin/nologin[9dlp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin[10dmail:x:8:8:mail:/var/mail:/usr/sbin/nologin[11dnews:x:9:9:news:/var/spool/news:/usr/sbin/nologin[12duucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin[13dproxy:x:13:13:proxy:/bin:/usr/sbin/nologin[14dwww-data:x:33:33:www-data:/var/www:/usr/sbin/nologin[15dbackup:x:34:34:backup:/var/backups:/usr/sbin/nologin[16dlist:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin[17dirc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin[18d_apt:x:42:65534::/nonexistent:/usr/sbin/nologin[19dnobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin[20dsystemd-network:x:998:998:systemd Network Management:/:/usr/sbin/nologin[21dsystemd-timesync:x:996:996:systemd Time Synchronization:/:/usr/sbin/nologin[22ddhcpcd:x:100:65534:DHCP Client Daemon,,,:/usr/lib/dhcpcd:/bin/false[23dmessagebus:x:101:101::/nonexistent:/usr/sbin/nologin[24dsyslog:x:102:102::/nonexistent:/usr/sbin/nologin[25dsystemd-resolve:x:991:991:systemd Resolver:/:/usr/sbin/nologin[26duuidd:x:103:103::/run/uuidd:/usr/sbin/nologin[27dlandscape:x:104:105::/var/lib/landscape:/usr/sbin/nologin[2d[?12l[?25h[?25l[28d[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio4[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio4[00m$ ..[K[Kcd ../ejercicio5/
+[?2004l[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio5[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio5[00m$ ./sh_pswd.sh 
+[?2004l|root|x|0:0:root:/root:/bin/bash|  \n 
+|daemon|x|1:1:daemon:/usr/sbin:/usr/sbin/nologin|  \n 
+|bin|x|2:2:bin:/bin:/usr/sbin/nologin|  \n 
+|sys|x|3:3:sys:/dev:/usr/sbin/nologin|  \n 
+|sync|x|4:65534:sync:/bin:/bin/sync|  \n 
+|games|x|5:60:games:/usr/games:/usr/sbin/nologin|  \n 
+|man|x|6:12:man:/var/cache/man:/usr/sbin/nologin|  \n 
+|lp|x|7:7:lp:/var/spool/lpd:/usr/sbin/nologin|  \n 
+|mail|x|8:8:mail:/var/mail:/usr/sbin/nologin|  \n 
+|news|x|9:9:news:/var/spool/news:/usr/sbin/nologin|  \n 
+|uucp|x|10:10:uucp:/var/spool/uucp:/usr/sbin/nologin|  \n 
+|proxy|x|13:13:proxy:/bin:/usr/sbin/nologin|  \n 
+|www-data|x|33:33:www-data:/var/www:/usr/sbin/nologin|  \n 
+|backup|x|34:34:backup:/var/backups:/usr/sbin/nologin|  \n 
+|list|x|38:38:Mailing List Manager:/var/list:/usr/sbin/nologin|  \n 
+|irc|x|39:39:ircd:/run/ircd:/usr/sbin/nologin|  \n 
+|_apt|x|42:65534::/nonexistent:/usr/sbin/nologin|  \n 
+|nobody|x|65534:65534:nobody:/nonexistent:/usr/sbin/nologin|  \n 
+|systemd-network|x|998:998:systemd Network Management:/:/usr/sbin/nologin|  \n 
+|systemd-timesync|x|996:996:systemd Time Synchronization:/:/usr/sbin/nologin|  \n 
+|dhcpcd|x|100:65534:DHCP Client Daemon,,,:/usr/lib/dhcpcd:/bin/false|  \n 
+|messagebus|x|101:101::/nonexistent:/usr/sbin/nologin|  \n 
+|syslog|x|102:102::/nonexistent:/usr/sbin/nologin|  \n 
+|systemd-resolve|x|991:991:systemd Resolver:/:/usr/sbin/nologin|  \n 
+|uuidd|x|103:103::/run/uuidd:/usr/sbin/nologin|  \n 
+|landscape|x|104:105::/var/lib/landscape:/usr/sbin/nologin|  \n 
+|polkitd|x|990:990:User for polkitd:/:/usr/sbin/nologin|  \n 
+|david|x|1000:1000:,,,:/home/david:/bin/bash|  \n 
+[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio5[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio5[00m$ ./sh_pswd.sh [1P[1P[1@n[1@a[1@n[1@o[1@ 
+[?2004l[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;54H(B[0;7m[ Reading... ](B[m[28;53H(B[0;7m[ Read 9 lines ](B[m[H(B[0;7m  GNU nano 7.2                                           sh_pswd.sh                                                     [1;119H(B[m[29d(B[0;7m^G(B[m Help[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[29;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[30d(B[0;7m^X(B[m Exit[30;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[2d[36m#!/bin/bash[4d[32mwhile[39m(B[m IFS[32m=(B[0;1m[33m':'[39m(B[m [32mread[39m(B[m var1 var2 var3[32m;[5ddo[7;9H(B[0;1m[34mecho[39m(B[m (B[0;1m[33m'|'[31m$var1[33m'|'[31m$var2[33m'|'[31m$var3[33m'|'[39m(B[m (B[0;1m[33m' \n '[9d(B[0m[32mdone[39m(B[m [32m<[39m(B[m/etc/passwd[2d[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25h[4d[?25l[?12l[?25h[5d[?25l[?12l[?25h[6d[?25l[?12l[?25h[7d[?25l[?12l[?25h[A[?25l[?12l[?25h[7d[?25l[?12l[?25h[8d[?25l[?12l[?25h[7;48H[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[C[?25l[1;69H(B[0;7m*[119G(B[m[?12l[?25h[7;46H(B[0;1m[33m'[39m(B[m[K[?25l[?12l[?25h' [32m\[39m(B[m'[K[?25l[?12l[?25h(B[0;1m[33m' '[39m(B[m[K[?25l[?12l[?25h(B[0;1m[33m'[39m(B[m[K[?25l[?12l[?25h'[K[?25l[?12l[?25h'[K[?25l[?12l[?25h [?25l[28d[K[?12l[?25h[7;39H(B[0;1m[33m'[39m(B[m[K[?25l[?12l[?25h'[K[?25l[?12l[?25h'[K[?25l[?12l[?25h'[K[?25l[?12l[?25h'[K[?25l[?12l[?25h[32m$[39m(B[m'[K[?25l[?12l[?25h'[K[?25l[?12l[?25h [?25l[?12l[?25h(B[0;1m[33m'[39m(B[m[K[?25l[?12l[?25h'[K[?25l[?12l[?25h'[K[?25l[?12l[?25h'[K[?25l[?12l[?25h'[K[?25l[?12l[?25h[32m$[39m(B[m'[K[?25l[?12l[?25h'[K[?25l[?12l[?25h [?25l[?12l[?25h[A[?25l[?12l[?25h[5;3H[?25l[?12l[?25h[4;24H[?25l[?12l[?25h[A[?25l[?12l[?25h[4;24H[?25l[?12l[?25h [?25l[?12l[?25hv[?25l[?12l[?25ha[?25l[?12l[?25hr[?25l[?12l[?25h2[?25l[?12l[?25h [?25l[?12l[?25hv[?25l[?12l[?25ha[?25l[?12l[?25hr[?25l[?12l[?25h3[?25l[?12l[?25h[C[?25l[?12l[?25h[?25l[?12l[?25h[32m;[39m(B[m[K[?25l[?12l[?25h[32m;[39m(B[m[K[?25l[?12l[?25h[32m;[39m(B[m[K[?25l[?12l[?25h[32m;[39m(B[m[K[?25l[?12l[?25h[32m;[39m(B[m[K[?25l[?12l[?25h[32m;[39m(B[m[K[?25l[?12l[?25h[32m;[39m(B[m[K[?25l[?12l[?25h[32m;[39m(B[m[K[?25l[?12l[?25h[32m;[39m(B[m[K[?25l[?12l[?25h[32m;[39m(B[m[K[?25l[28d(B[0;7mSave modified buffer?                                                                                                   [29;1H Y(B[m Yes[K[30d(B[0;7m N(B[m No  [30;16H (B[0;7m^C(B[m Cancel[K[28;23H[?12l[?25h[?25l[29d(B[0;7m^G(B[m Help[29;31H(B[0;7mM-D(B[m DOS Format[29;61H(B[0;7mM-A(B[m Append[29;91H(B[0;7mM-B(B[m Backup File[30d(B[0;7m^C(B[m Cancel[17G[14X[30;31H(B[0;7mM-M(B[m Mac Format[30;61H(B[0;7mM-P(B[m Prepend[30;91H(B[0;7m^T(B[m Browse[28d(B[0;7mFile Name to Write: sh_pswd.sh(B[m[?12l[?25h[?25l[28;53H[1K (B[0;7m[ Writing... ](B[m[K[1;69H(B[0;7m [119G(B[m[28;52H(B[0;7m[ Wrote 9 lines ](B[m[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio5[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio5[00m$ nano sh_pswd.sh [3P./[C[C[C[C[C[C[C[C[C[C[C
+[?2004l|root:x:0:0:root:/root:/bin/bash|
+|daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin|
+|bin:x:2:2:bin:/bin:/usr/sbin/nologin|
+|sys:x:3:3:sys:/dev:/usr/sbin/nologin|
+|sync:x:4:65534:sync:/bin:/bin/sync|
+|games:x:5:60:games:/usr/games:/usr/sbin/nologin|
+|man:x:6:12:man:/var/cache/man:/usr/sbin/nologin|
+|lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin|
+|mail:x:8:8:mail:/var/mail:/usr/sbin/nologin|
+|news:x:9:9:news:/var/spool/news:/usr/sbin/nologin|
+|uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin|
+|proxy:x:13:13:proxy:/bin:/usr/sbin/nologin|
+|www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin|
+|backup:x:34:34:backup:/var/backups:/usr/sbin/nologin|
+|list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin|
+|irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin|
+|_apt:x:42:65534::/nonexistent:/usr/sbin/nologin|
+|nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin|
+|systemd-network:x:998:998:systemd Network Management:/:/usr/sbin/nologin|
+|systemd-timesync:x:996:996:systemd Time Synchronization:/:/usr/sbin/nologin|
+|dhcpcd:x:100:65534:DHCP Client Daemon,,,:/usr/lib/dhcpcd:/bin/false|
+|messagebus:x:101:101::/nonexistent:/usr/sbin/nologin|
+|syslog:x:102:102::/nonexistent:/usr/sbin/nologin|
+|systemd-resolve:x:991:991:systemd Resolver:/:/usr/sbin/nologin|
+|uuidd:x:103:103::/run/uuidd:/usr/sbin/nologin|
+|landscape:x:104:105::/var/lib/landscape:/usr/sbin/nologin|
+|polkitd:x:990:990:User for polkitd:/:/usr/sbin/nologin|
+|david:x:1000:1000:,,,:/home/david:/bin/bash|
+[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio5[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio5[00m$ ./sh_pswd.sh [3@nano [C[C[C[C[C[C[C[C[C[C[C
+[?2004l[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;54H(B[0;7m[ Reading... ](B[m[28;53H(B[0;7m[ Read 9 lines ](B[m[H(B[0;7m  GNU nano 7.2                                           sh_pswd.sh                                                     [1;119H(B[m[29d(B[0;7m^G(B[m Help[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[29;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[30d(B[0;7m^X(B[m Exit[30;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[2d[36m#!/bin/bash[4d[32mwhile[39m(B[m IFS[32m=(B[0;1m[33m':'[39m(B[m [32mread[39m(B[m var1[32m;[5ddo[7;9H(B[0;1m[34mecho[39m(B[m (B[0;1m[33m'|'[31m$var1[33m'|'[9d(B[0m[32mdone[39m(B[m [32m<[39m(B[m/etc/passwd[2d[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25h[4d[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h [?25l[?12l[?25hI[?25l[?12l[?25hF[?25l[?12l[?25hS[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h [?25l[?12l[?25h[C[?25l[28d[K[?12l[?25h[4;17H[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[1;69H(B[0;7m*[119G(B[m[?12l[?25h[4;19H  var1[32m;[20G[39m(B[m[?25l[?12l[?25h- var1[32m;[21G[39m(B[m[?25l[?12l[?25h(B[0;1m[35m -r[39m(B[m var1[32m;[22G[39m(B[m[?25l[?12l[?25h[5;3H[?25l[?12l[?25h[6d[?25l7[6;28r8M[1;30r[7;1H[?12l[?25h[?25l[6;28r[6;1HM[1;30r[8;1H[?12l[?25h[?25l[6;28r[6;1HM[1;30r[9;1H[?12l[?25h[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[8G[42m[1K [49m(B[m[?25l[?12l[?25h[1K r[?25l[?12l[?25he[?25l[?12l[?25ha[?25l[?12l[?25h[32mread[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h -[?25l[?12l[?25h(B[0;1m[35m -a[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h c[?25l[?12l[?25ha[?25l[?12l[?25hm[?25l[?12l[?25hp[?25l[?12l[?25ho[?25l[?12l[?25hs[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h [32m<[39m(B[m[?25l[?12l[?25h[32m<[39m(B[m[?25l[?12l[?25h[32m<[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h v[?25l[?12l[?25ha[?25l[?12l[?25hr[?25l[?12l[?25h1[?25l[?12l[?25h[32m;[39m(B[m[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h(B[0;1m[31m$var1(B[0m[32m;[29G[39m(B[m[?25l[?12l[?25h[7;17H[?25l[?12l[?25h[?25l[?12l[?25h[9G[?25l[?12l[?25h[5d[?25l[?12l[?25h[7;9H[?25l[?12l[?25hIread(B[0;1m[35m -a[39m(B[m campos [32m<<<[39m(B[m (B[0;1m[31m$var1(B[0m[32m;[7;10H[39m(B[m[?25l[?12l[?25hFread(B[0;1m[35m -a[39m(B[m campos [32m<<<[39m(B[m (B[0;1m[31m$var1(B[0m[32m;[7;11H[39m(B[m[?25l[?12l[?25hSread(B[0;1m[35m -a[39m(B[m campos [32m<<<[39m(B[m (B[0;1m[31m$var1(B[0m[32m;[7;12H[39m(B[m[?25l[?12l[?25h[32m=read(B[0;1m[35m -a[39m(B[m campos [32m<<<[39m(B[m (B[0;1m[31m$var1(B[0m[32m;[7;13H[39m(B[m[?25l[?12l[?25h'[32mread(B[0;1m[35m -a[39m(B[m campos [32m<<<[39m(B[m (B[0;1m[31m$var1(B[0m[32m;[7;14H[39m(B[m[?25l[?12l[?25h[32m:read(B[0;1m[35m -a[39m(B[m campos [32m<<<[39m(B[m (B[0;1m[31m$var1(B[0m[32m;[7;15H[39m(B[m[?25l[?12l[?25h(B[0;1m[33m':'(B[0m[32mread(B[0;1m[35m -a[39m(B[m campos [32m<<<[39m(B[m (B[0;1m[31m$var1(B[0m[32m;[7;16H[39m(B[m[?25l[?12l[?25h [32mread(B[0;1m[35m -a[39m(B[m campos [32m<<<[39m(B[m (B[0;1m[31m$var1(B[0m[32m;[7;17H[39m(B[m[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h [?25l[?12l[?25hc[?25l[?12l[?25ha[?25l[?12l[?25hm[?25l[?12l[?25hp[?25l[?12l[?25ho[?25l[?12l[?25hs[?25l[?12l[?25h [?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h [?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[8d[?25l[?12l[?25h[9d[?25l[?12l[?25h[10d[?25l[?12l[?25h[10;9H[?25l[?12l[?25h[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[7;42H[?25l[?12l[?25h[8d[?25l[?12l[?25h[9d[?25l[?12l[?25h[8G[42m[1K [49m(B[m[?25l[?12l[?25h[1K f[?25l[?12l[?25ho[?25l[?12l[?25h[32mfor[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h t[?25l[?12l[?25ho[?25l[?12l[?25hk[?25l[?12l[?25he[?25l[?12l[?25hn[?25l[?12l[?25hs[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h i[?25l[?12l[?25h[32min[39m(B[m[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h [32min[39m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h c[?25l[?12l[?25ha[?25l[?12l[?25hm[?25l[?12l[?25hp[?25l[?12l[?25ho[?25l[?12l[?25hs[?25l[?12l[?25h[32m}[39m(B[m[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[32m{[39m(B[mcampos[32m}[23G[39m(B[m[?25l[?12l[?25h[?25l[?12l[?25h"[32m{[39m(B[mcampos[32m}[9;23H[39m(B[m[?25l[?12l[?25h[C[?25l[?12l[?25hc[?25l[?12l[?25ha[?25l[?12l[?25hm[?25l[?12l[?25hp[?25l[?12l[?25ho[?25l[?12l[?25hs[?25l[?12l[?25h[C[?25l[?12l[?25h[9;22H(B[0;1m[33m"{campos}"[39m(B[m[?25l[?12l[?25h[9;24H[?25l[?12l[?25h[?25l[?12l[?25h(B[0;1m[33m${campos}"[9;24H[39m(B[m[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[?25l[?12l[?25h(B[0;1m[33m[}"[39m(B[m[?25l[?12l[?25h(B[0;1m[33m@}"[39m(B[m[?25l[?12l[?25h(B[0;1m[33m]}"[39m(B[m[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[10d[?25l[?12l[?25h[9;36H[?25l[?12l[?25h[32m;[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h d[?25l[?12l[?25h[32mdo[39m(B[m[?25l7[10;28r8[10dM[1;30r[10;1H[?12l[?25h[?25l[?12l[?25h[8G[42m[1K [49m(B[m[?25l[?12l[?25h[1K e[?25l[?12l[?25hc[?25l[?12l[?25hh[?25l[?12l[?25h(B[0;1m[34mecho[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h [?25l[?12l[?25hech[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m[1K [49m(B[m [?25l[?12l[?25h[K[?25l[10;28r[28;1H
+[1;30r[9;40H[?12l[?25h[?25l[?12l[?25hd[K[?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h d[?25l[?12l[?25h[32mdo[39m(B[m[?25l[?12l[?25h[10;25H[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h(B[0;1m[33m'|'[39m(B[m[K[?25l[?12l[?25h(B[0;1m[33m'|'[39m(B[m[K[?25l[?12l[?25h(B[0;1m[33m'|'[39m(B[m[K[?25l[?12l[?25h[32m$(B[0;1m[33m'|'[39m(B[m[K[?25l[?12l[?25h(B[0;1m[31m$t[33m'|'[39m(B[m[?25l[?12l[?25h(B[0;1m[31mo[33m'|'[39m(B[m[?25l[?12l[?25h(B[0;1m[31mk[33m'|'[39m(B[m[?25l[?12l[?25h(B[0;1m[31me[33m'|'[39m(B[m[?25l[?12l[?25h(B[0;1m[31mn[33m'|'[39m(B[m[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l7[11;28r8[11dM[1;30r[11;1H[?12l[?25h[?25l[?12l[?25h[8G[42m[1K [49m(B[m[?25l[?12l[?25h[1K d[?25l[?12l[?25h[32mdo[39m(B[m[?25l[?12l[?25hdon[?25l[?12l[?25h[32mdone[39m(B[m[?25l[28d(B[0;7mSave modified buffer?                                                                                                   [29;1H Y(B[m Yes[K[30d(B[0;7m N(B[m No  [30;16H (B[0;7m^C(B[m Cancel[K[28;23H[?12l[?25h[?25l[29d(B[0;7m^G(B[m Help[29;31H(B[0;7mM-D(B[m DOS Format[29;61H(B[0;7mM-A(B[m Append[29;91H(B[0;7mM-B(B[m Backup File[30d(B[0;7m^C(B[m Cancel[17G[14X[30;31H(B[0;7mM-M(B[m Mac Format[30;61H(B[0;7mM-P(B[m Prepend[30;91H(B[0;7m^T(B[m Browse[28d(B[0;7mFile Name to Write: sh_pswd.sh(B[m[?12l[?25h[?25l[28;53H[1K (B[0;7m[ Writing... ](B[m[K[1;69H(B[0;7m [119G(B[m[28;52H(B[0;7m[ Wrote 13 lines ](B[m[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio5[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio5[00m$ nano sh_pswd.sh [3P./[C[C[C[C[C[C[C[C[C[C[C
+[?2004l|root|
+|x|
+|0|
+|0|
+|root|
+|/root|
+|/bin/bash|
+|daemon|
+|x|
+|1|
+|1|
+|daemon|
+|/usr/sbin|
+|/usr/sbin/nologin|
+|bin|
+|x|
+|2|
+|2|
+|bin|
+|/bin|
+|/usr/sbin/nologin|
+|sys|
+|x|
+|3|
+|3|
+|sys|
+|/dev|
+|/usr/sbin/nologin|
+|sync|
+|x|
+|4|
+|65534|
+|sync|
+|/bin|
+|/bin/sync|
+|games|
+|x|
+|5|
+|60|
+|games|
+|/usr/games|
+|/usr/sbin/nologin|
+|man|
+|x|
+|6|
+|12|
+|man|
+|/var/cache/man|
+|/usr/sbin/nologin|
+|lp|
+|x|
+|7|
+|7|
+|lp|
+|/var/spool/lpd|
+|/usr/sbin/nologin|
+|mail|
+|x|
+|8|
+|8|
+|mail|
+|/var/mail|
+|/usr/sbin/nologin|
+|news|
+|x|
+|9|
+|9|
+|news|
+|/var/spool/news|
+|/usr/sbin/nologin|
+|uucp|
+|x|
+|10|
+|10|
+|uucp|
+|/var/spool/uucp|
+|/usr/sbin/nologin|
+|proxy|
+|x|
+|13|
+|13|
+|proxy|
+|/bin|
+|/usr/sbin/nologin|
+|www-data|
+|x|
+|33|
+|33|
+|www-data|
+|/var/www|
+|/usr/sbin/nologin|
+|backup|
+|x|
+|34|
+|34|
+|backup|
+|/var/backups|
+|/usr/sbin/nologin|
+|list|
+|x|
+|38|
+|38|
+|Mailing List Manager|
+|/var/list|
+|/usr/sbin/nologin|
+|irc|
+|x|
+|39|
+|39|
+|ircd|
+|/run/ircd|
+|/usr/sbin/nologin|
+|_apt|
+|x|
+|42|
+|65534|
+||
+|/nonexistent|
+|/usr/sbin/nologin|
+|nobody|
+|x|
+|65534|
+|65534|
+|nobody|
+|/nonexistent|
+|/usr/sbin/nologin|
+|systemd-network|
+|x|
+|998|
+|998|
+|systemd Network Management|
+|/|
+|/usr/sbin/nologin|
+|systemd-timesync|
+|x|
+|996|
+|996|
+|systemd Time Synchronization|
+|/|
+|/usr/sbin/nologin|
+|dhcpcd|
+|x|
+|100|
+|65534|
+|DHCP Client Daemon,,,|
+|/usr/lib/dhcpcd|
+|/bin/false|
+|messagebus|
+|x|
+|101|
+|101|
+||
+|/nonexistent|
+|/usr/sbin/nologin|
+|syslog|
+|x|
+|102|
+|102|
+||
+|/nonexistent|
+|/usr/sbin/nologin|
+|systemd-resolve|
+|x|
+|991|
+|991|
+|systemd Resolver|
+|/|
+|/usr/sbin/nologin|
+|uuidd|
+|x|
+|103|
+|103|
+||
+|/run/uuidd|
+|/usr/sbin/nologin|
+|landscape|
+|x|
+|104|
+|105|
+||
+|/var/lib/landscape|
+|/usr/sbin/nologin|
+|polkitd|
+|x|
+|990|
+|990|
+|User for polkitd|
+|/|
+|/usr/sbin/nologin|
+|david|
+|x|
+|1000|
+|1000|
+|,,,|
+|/home/david|
+|/bin/bash|
+[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio5[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio5[00m$ ./sh_pswd.sh [3@nano [C[C[C[C[C[C[C[C[C[C[C
+[?2004l[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;54H(B[0;7m[ Reading... ](B[m[28;52H(B[0;7m[ Read 13 lines ](B[m[H(B[0;7m  GNU nano 7.2                                           sh_pswd.sh                                                     [1;119H(B[m[29d(B[0;7m^G(B[m Help[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[29;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[30d(B[0;7m^X(B[m Exit[30;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[2d[36m#!/bin/bash[4d[32mwhile[39m(B[m IFS[32m=(B[0;1m[33m':'[39m(B[m [32mread(B[0;1m[35m -r[39m(B[m var1[32m;[5ddo[7;9H[39m(B[mIFS[32m=(B[0;1m[33m':'[39m(B[m [32mread(B[0;1m[35m -a[39m(B[m campos [32m<<<[39m(B[m (B[0;1m[31m$var1(B[0m[32m;[9;9Hfor[39m(B[m token [32min[39m(B[m (B[0;1m[33m"${campos[@]}"(B[0m[32m;[39m(B[m [32mdo[10;9H(B[0;1m[34mecho[39m(B[m (B[0;1m[33m'|'[31m$token[33m'|'[11;9H(B[0m[32mdone[13ddone[39m(B[m [32m<[39m(B[m/etc/passwd[2d[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25h[4d[?25l[?12l[?25h[5d[?25l[?12l[?25h[6d[?25l[?12l[?25h[7d[?25l[?12l[?25h[8d[?25l[?12l[?25h[9d[?25l[?12l[?25h[10d[?25l[?12l[?25h[11d[?25l[?12l[?25h[A[?25l[?12l[?25h[10;9H[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[1;69H(B[0;7m*[28d(B[m[K[1;119H[?12l[?25h[10;13H  (B[0;1m[33m'|'[31m$token[33m'|'[10;14H[39m(B[m[?25l[?12l[?25h- (B[0;1m[33m'|'[31m$token[33m'|'[10;15H[39m(B[m[?25l[?12l[?25h(B[0;1m[35m -n[39m(B[m (B[0;1m[33m'|'[31m$token[33m'|'[10;16H[39m(B[m[?25l[?12l[?25h[11;13H[?25l7[12;28r8[12dM[1;30r[12;1H[?12l[?25h[?25l[?12l[?25h[8G[42m[1K [49m(B[m[?25l[?12l[?25h[1K e[?25l[?12l[?25hc[?25l[?12l[?25hh[?25l[?12l[?25h(B[0;1m[34mecho[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h '[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h(B[0;1m[33m' '[39m(B[m[?25l[28d(B[0;7mSave modified buffer?                                                                                                   [29;1H Y(B[m Yes[K[30d(B[0;7m N(B[m No  [30;16H (B[0;7m^C(B[m Cancel[K[28;23H[?12l[?25h[?25l[29d(B[0;7m^G(B[m Help[29;31H(B[0;7mM-D(B[m DOS Format[29;61H(B[0;7mM-A(B[m Append[29;91H(B[0;7mM-B(B[m Backup File[30d(B[0;7m^C(B[m Cancel[17G[14X[30;31H(B[0;7mM-M(B[m Mac Format[30;61H(B[0;7mM-P(B[m Prepend[30;91H(B[0;7m^T(B[m Browse[28d(B[0;7mFile Name to Write: sh_pswd.sh(B[m[?12l[?25h[?25l[28;53H[1K (B[0;7m[ Writing... ](B[m[K[1;69H(B[0;7m [119G(B[m[28;52H(B[0;7m[ Wrote 14 lines ](B[m[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio5[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio5[00m$ nano sh_pswd.sh [3P./[C[C[C[C[C[C[C[C[C[C[C
+[?2004l|root||x||0||0||root||/root||/bin/bash| 
+|daemon||x||1||1||daemon||/usr/sbin||/usr/sbin/nologin| 
+|bin||x||2||2||bin||/bin||/usr/sbin/nologin| 
+|sys||x||3||3||sys||/dev||/usr/sbin/nologin| 
+|sync||x||4||65534||sync||/bin||/bin/sync| 
+|games||x||5||60||games||/usr/games||/usr/sbin/nologin| 
+|man||x||6||12||man||/var/cache/man||/usr/sbin/nologin| 
+|lp||x||7||7||lp||/var/spool/lpd||/usr/sbin/nologin| 
+|mail||x||8||8||mail||/var/mail||/usr/sbin/nologin| 
+|news||x||9||9||news||/var/spool/news||/usr/sbin/nologin| 
+|uucp||x||10||10||uucp||/var/spool/uucp||/usr/sbin/nologin| 
+|proxy||x||13||13||proxy||/bin||/usr/sbin/nologin| 
+|www-data||x||33||33||www-data||/var/www||/usr/sbin/nologin| 
+|backup||x||34||34||backup||/var/backups||/usr/sbin/nologin| 
+|list||x||38||38||Mailing List Manager||/var/list||/usr/sbin/nologin| 
+|irc||x||39||39||ircd||/run/ircd||/usr/sbin/nologin| 
+|_apt||x||42||65534||||/nonexistent||/usr/sbin/nologin| 
+|nobody||x||65534||65534||nobody||/nonexistent||/usr/sbin/nologin| 
+|systemd-network||x||998||998||systemd Network Management||/||/usr/sbin/nologin| 
+|systemd-timesync||x||996||996||systemd Time Synchronization||/||/usr/sbin/nologin| 
+|dhcpcd||x||100||65534||DHCP Client Daemon,,,||/usr/lib/dhcpcd||/bin/false| 
+|messagebus||x||101||101||||/nonexistent||/usr/sbin/nologin| 
+|syslog||x||102||102||||/nonexistent||/usr/sbin/nologin| 
+|systemd-resolve||x||991||991||systemd Resolver||/||/usr/sbin/nologin| 
+|uuidd||x||103||103||||/run/uuidd||/usr/sbin/nologin| 
+|landscape||x||104||105||||/var/lib/landscape||/usr/sbin/nologin| 
+|polkitd||x||990||990||User for polkitd||/||/usr/sbin/nologin| 
+|david||x||1000||1000||,,,||/home/david||/bin/bash| 
+[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio5[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio5[00m$ ./sh_pswd.sh [3@nano [C[C[C[C[C[C[C[C[C[C[C
+[?2004l[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;54H(B[0;7m[ Reading... ](B[m[28;52H(B[0;7m[ Read 14 lines ](B[m[H(B[0;7m  GNU nano 7.2                                           sh_pswd.sh                                                     [1;119H(B[m[29d(B[0;7m^G(B[m Help[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[29;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[30d(B[0;7m^X(B[m Exit[30;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[2d[36m#!/bin/bash[4d[32mwhile[39m(B[m IFS[32m=(B[0;1m[33m':'[39m(B[m [32mread(B[0;1m[35m -r[39m(B[m var1[32m;[5ddo[7;9H[39m(B[mIFS[32m=(B[0;1m[33m':'[39m(B[m [32mread(B[0;1m[35m -a[39m(B[m campos [32m<<<[39m(B[m (B[0;1m[31m$var1(B[0m[32m;[9;9Hfor[39m(B[m token [32min[39m(B[m (B[0;1m[33m"${campos[@]}"(B[0m[32m;[39m(B[m [32mdo[10;9H(B[0;1m[34mecho[35m -n[39m(B[m (B[0;1m[33m'|'[31m$token[33m'|'[11;9H(B[0m[32mdone[12;9H(B[0;1m[34mecho[39m(B[m (B[0;1m[33m' '[14d(B[0m[32mdone[39m(B[m [32m<[39m(B[m/etc/passwd[2d[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25h[4d[?25l[?12l[?25h[5d[?25l[?12l[?25h[6d[?25l[?12l[?25h[7d[?25l[?12l[?25h[8d[?25l[?12l[?25h[9d[?25l[?12l[?25h[10d[?25l[?12l[?25h[11d[?25l[?12l[?25h[12d[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[10;9H[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[28d[K[?12l[?25h[10;13H[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h [?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[1;69H(B[0;7m*[119G(B[m[?12l[?25h[10;26H'[32m|[39m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[11;13H[?25l[?12l[?25h[12;17H[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h(B[0;1m[33m| '[39m(B[m[?25l[28d(B[0;7mSave modified buffer?                                                                                                   [29;1H Y(B[m Yes[K[30d(B[0;7m N(B[m No  [30;16H (B[0;7m^C(B[m Cancel[K[28;23H[?12l[?25h[?25l[29d(B[0;7m^G(B[m Help[29;31H(B[0;7mM-D(B[m DOS Format[29;61H(B[0;7mM-A(B[m Append[29;91H(B[0;7mM-B(B[m Backup File[30d(B[0;7m^C(B[m Cancel[17G[14X[30;31H(B[0;7mM-M(B[m Mac Format[30;61H(B[0;7mM-P(B[m Prepend[30;91H(B[0;7m^T(B[m Browse[28d(B[0;7mFile Name to Write: sh_pswd.sh(B[m[?12l[?25h[?25l[28;53H[1K (B[0;7m[ Writing... ](B[m[K[1;69H(B[0;7m [119G(B[m[28;52H(B[0;7m[ Wrote 14 lines ](B[m[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio5[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio5[00m$ nano sh_pswd.sh [3P./[C[C[C[C[C[C[C[C[C[C[C
+[?2004l|root|x|0|0|root|/root|/bin/bash| 
+|daemon|x|1|1|daemon|/usr/sbin|/usr/sbin/nologin| 
+|bin|x|2|2|bin|/bin|/usr/sbin/nologin| 
+|sys|x|3|3|sys|/dev|/usr/sbin/nologin| 
+|sync|x|4|65534|sync|/bin|/bin/sync| 
+|games|x|5|60|games|/usr/games|/usr/sbin/nologin| 
+|man|x|6|12|man|/var/cache/man|/usr/sbin/nologin| 
+|lp|x|7|7|lp|/var/spool/lpd|/usr/sbin/nologin| 
+|mail|x|8|8|mail|/var/mail|/usr/sbin/nologin| 
+|news|x|9|9|news|/var/spool/news|/usr/sbin/nologin| 
+|uucp|x|10|10|uucp|/var/spool/uucp|/usr/sbin/nologin| 
+|proxy|x|13|13|proxy|/bin|/usr/sbin/nologin| 
+|www-data|x|33|33|www-data|/var/www|/usr/sbin/nologin| 
+|backup|x|34|34|backup|/var/backups|/usr/sbin/nologin| 
+|list|x|38|38|Mailing List Manager|/var/list|/usr/sbin/nologin| 
+|irc|x|39|39|ircd|/run/ircd|/usr/sbin/nologin| 
+|_apt|x|42|65534||/nonexistent|/usr/sbin/nologin| 
+|nobody|x|65534|65534|nobody|/nonexistent|/usr/sbin/nologin| 
+|systemd-network|x|998|998|systemd Network Management|/|/usr/sbin/nologin| 
+|systemd-timesync|x|996|996|systemd Time Synchronization|/|/usr/sbin/nologin| 
+|dhcpcd|x|100|65534|DHCP Client Daemon,,,|/usr/lib/dhcpcd|/bin/false| 
+|messagebus|x|101|101||/nonexistent|/usr/sbin/nologin| 
+|syslog|x|102|102||/nonexistent|/usr/sbin/nologin| 
+|systemd-resolve|x|991|991|systemd Resolver|/|/usr/sbin/nologin| 
+|uuidd|x|103|103||/run/uuidd|/usr/sbin/nologin| 
+|landscape|x|104|105||/var/lib/landscape|/usr/sbin/nologin| 
+|polkitd|x|990|990|User for polkitd|/|/usr/sbin/nologin| 
+|david|x|1000|1000|,,,|/home/david|/bin/bash| 
+[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio5[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio5[00m$ man dirname
+[?2004l[?1049h[22;0;0t[?1h=[4mDIRNAME[24m(1)                                          User Commands                                          [4mDIRNAME[24m(1)[m
+[m
+[1mNAME[0m[m
+       dirname - strip last component from file name[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mdirname [22m[[4mOPTION[24m] [4mNAME[24m...[m
+[m
+[1mDESCRIPTION[0m[m
+       Output each NAME with its last non-slash component and trailing slashes removed; if NAME contains no /'s, out‐[m
+       put '.' (meaning the current directory).[m
+[m
+       [1m-z[22m, [1m--zero[0m[m
+              end each output line with NUL, not newline[m
+[m
+       [1m--help [22mdisplay this help and exit[m
+[m
+       [1m--version[0m[m
+              output version information and exit[m
+[m
+[1mEXAMPLES[0m[m
+       dirname /usr/bin/[m
+              -> "/usr"[m
+[m
+       dirname dir1/str dir2/str[m
+              -> "dir1" followed by "dir2"[m
+[m
+       dirname stdio.h[m
+              -> "."[m
+[7m Manual page dirname(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page dirname(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mAUTHOR[0m[m
+[7m Manual page dirname(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Written by David MacKenzie and Jim Meyering.[m
+[7m Manual page dirname(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page dirname(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mREPORTING BUGS[0m[m
+[7m Manual page dirname(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       GNU coreutils online help: <https://www.gnu.org/software/coreutils/>[m
+[7m Manual page dirname(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Report any translation bugs to <https://translationproject.org/team/>[m
+[7m Manual page dirname(1) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page dirname(1) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mCOPYRIGHT[0m[m
+[7m Manual page dirname(1) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Copyright   ©   2023   Free   Software   Foundation,  Inc.   License  GPLv3+:  GNU  GPL  version  3  or  later[m
+[7m Manual page dirname(1) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       <https://gnu.org/licenses/gpl.html>.[m
+[7m Manual page dirname(1) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       This is free software: you are free to change and redistribute it.  There is NO WARRANTY, to the  extent  per‐[m
+[7m Manual page dirname(1) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       mitted by law.[m
+[7m Manual page dirname(1) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page dirname(1) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mSEE ALSO[0m[m
+[7m Manual page dirname(1) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mbasename[22m(1), [1mreadlink[22m(1)[m
+[7m Manual page dirname(1) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page dirname(1) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Full documentation <https://www.gnu.org/software/coreutils/dirname>[m
+[7m Manual page dirname(1) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       or available locally via: info '(coreutils) dirname invocation'[m
+[7m Manual page dirname(1) line 20 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page dirname(1) line 21 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[KGNU coreutils 9.4                                     June 2025                                            [4mDIRNAME[24m(1)[m
+[7m Manual page dirname(1) line 22 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page dirname(1) line 22/50 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page dirname(1) line 22/50 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page dirname(1) line 22/50 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page dirname(1) line 22/50 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page dirname(1) line 22/50 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page dirname(1) line 22/50 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page dirname(1) line 22/50 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page dirname(1) line 22/50 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page dirname(1) line 22/50 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page dirname(1) line 22/50 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page dirname(1) line 22/50 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page dirname(1) line 22/50 (END) (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio5[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio5[00m$ man dirname./sh_pswd.sh [3@nano [C[C[C[C[C[C[C[C[C[C[C
+[?2004l[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;54H(B[0;7m[ Reading... ](B[m[28;52H(B[0;7m[ Read 14 lines ](B[m[H(B[0;7m  GNU nano 7.2                                           sh_pswd.sh                                                     [1;119H(B[m[29d(B[0;7m^G(B[m Help[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[29;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[30d(B[0;7m^X(B[m Exit[30;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[2d[36m#!/bin/bash[4d[32mwhile[39m(B[m IFS[32m=(B[0;1m[33m':'[39m(B[m [32mread(B[0;1m[35m -r[39m(B[m var1[32m;[5ddo[7;9H[39m(B[mIFS[32m=(B[0;1m[33m':'[39m(B[m [32mread(B[0;1m[35m -a[39m(B[m campos [32m<<<[39m(B[m (B[0;1m[31m$var1(B[0m[32m;[9;9Hfor[39m(B[m token [32min[39m(B[m (B[0;1m[33m"${campos[@]}"(B[0m[32m;[39m(B[m [32mdo[10;9H(B[0;1m[34mecho[35m -n[39m(B[m (B[0;1m[33m'|'[31m$token[11;9H(B[0m[32mdone[12;9H(B[0;1m[34mecho[39m(B[m (B[0;1m[33m'| '[14d(B[0m[32mdone[39m(B[m [32m<[39m(B[m/etc/passwd[2d[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25h[4d[?25l[?12l[?25h[5d[?25l[?12l[?25h[6d[?25l[1;69H(B[0;7m*[119G(B[m[?12l[?25h[6;8H[42m[1K [49m(B[m[?25l7[6;27r8M[1;30r[6;8H[42m[1K[7d[49m(B[m[K[?12l[?25h[?25l[6;27r[6;1HM[1;30r[6;8H[42m[1K[7d[49m(B[m[K[8d[?12l[?25h[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[6;9H[?25l[?12l[?25h[16G[42m[1K [49m(B[m[?25l[?12l[?25h[6;9H[K[?25l7[6;27r8M[1;30r[6;8H[42m[1K[7d[49m(B[m[K[?12l[?25h[?25l[?12l[?25h[8G[42m[1K [49m(B[m[?25l[?12l[?25h[1K h[?25l[?12l[?25ho[?25l[28d[K[?12l[?25h[7;11Hm[?25l[?12l[?25he[?25l[?12l[?25h[32m=[39m(B[m[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m[1K [49m(B[m [?25l[?12l[?25h[K[?25l[6;28r[28;1H
+[1;30r[6;8H[42m[1K [49m(B[m[?12l[?25h[?25l[?12l[?25h[K[?25l[6;28r[28;1H
+[1;30r[5;3H[?12l[?25h[?25l[6;28r[28;1H
+[1;30r[5;3H[?12l[?25h[?25l[?12l[?25h[6d[?25l[?12l[?25h[7d[?25l[?12l[?25h[8d[?25l[?12l[?25h[9d[?25l[?12l[?25h[A[?25l[?12l[?25h[8G[42m[1K [49m(B[m[?25l7[8;28r8M[1;30r[8;8H[42m[1K[9d[49m(B[m[K[?12l[?25h[?25l[8;28r[8;1HM[1;30r[8;8H[42m[1K[9d[49m(B[m[K[10d[?12l[?25h[?25l[?12l[?25h[A[?25l[?12l[?25h[8G[42m[1K [49m(B[m[?25l[?12l[?25h[1K h[?25l[?12l[?25ho[?25l[?12l[?25hm[?25l[?12l[?25he[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h c[?25l[?12l[?25ha[?25l[?12l[?25hm[?25l[?12l[?25hp[?25l[?12l[?25ho[?25l[?12l[?25hs[?25l[?12l[?25h[32m[[39m(B[m[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h "[?25l[?12l[?25h[32m$[39m(B[m[?25l[?12l[?25h[32m{[39m(B[m[?25l[?12l[?25hc[?25l[?12l[?25ha[?25l[?12l[?25hm[?25l[?12l[?25hp[?25l[?12l[?25ho[?25l[?12l[?25hs[?25l[?12l[?25h[9;15H(B[0;1m[31m${campos[[39m(B[m[?25l[?12l[?25h5[?25l[?12l[?25h[32m][39m(B[m[?25l[?12l[?25h(B[0;1m[31m5]}[39m(B[m[?25l[?12l[?25h[9;14H(B[0;1m[33m"${campos[5]}"[39m(B[m[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[32m=(B[0;1m[33m"${campos[5]}"[9;15H[39m(B[m[?25l[?12l[?25h (B[0;1m[33m"${campos[5]}"[9;16H[39m(B[m[?25l[?12l[?25h[19G[?25l[?12l[?25h[26G[?25l[?12l[?25h[11;9H[?25l[?12l[?25h[A[?25l[?12l[?25h[8G[42m[1K [49m(B[m[?25l7[10;28r8M[1;30r[10;8H[42m[1K[11d[49m(B[m[K[?12l[?25h[?25l[10;28r[10;1HM[1;30r[10;8H[42m[1K[11d[49m(B[m[K[12d[?12l[?25h[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[10;9H[?25l[?12l[?25h[1K d[?25l[?12l[?25hi[?25l[?12l[?25hr[?25l[?12l[?25h_[?25l[?12l[?25hp[?25l[?12l[?25ha[?25l[?12l[?25hd[?25l[?12l[?25hr[?25l[?12l[?25he[?25l[?12l[?25h[32m=[39m(B[m[?25l[?12l[?25h[32m$[39m(B[m[?25l[?12l[?25h[32m([39m(B[m[?25l[?12l[?25hd[?25l[?12l[?25hi[?25l[?12l[?25hr[?25l[?12l[?25hn[?25l[?12l[?25ha[?25l[?12l[?25hm[?25l[?12l[?25he[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h "[?25l[?12l[?25h[32m$[39m(B[m[?25l[?12l[?25h(B[0;1m[31m$h[39m(B[m[?25l[?12l[?25h(B[0;1m[31mo[39m(B[m[?25l[?12l[?25h(B[0;1m[31mm[39m(B[m[?25l[?12l[?25h(B[0;1m[31me[39m(B[m[?25l[?12l[?25h[29G(B[0;1m[33m"$home"[39m(B[m[?25l[?12l[?25h[32m)[39m(B[m[?25l[?12l[?25h[11d[?25l[?12l[?25h[12d[?25l[?12l[?25h[13d[?25l[?12l[?25h[A[?25l[?12l[?25h[8G[42m[1K [49m(B[m[?25l[?12l[?25h[1K i[?25l[?12l[?25h[32mif[39m(B[m[?25l[?12l[?25h[32m([39m(B[m[?25l[?12l[?25h[32m)[39m(B[m[?25l[?12l[?25h[?25l[?12l[?25h[32m$)[39m(B[m[?25l[?12l[?25h(B[0;1m[31m$d(B[0m[32m)[39m(B[m[?25l[?12l[?25h(B[0;1m[31mi(B[0m[32m)[39m(B[m[?25l[?12l[?25h(B[0;1m[31mr(B[0m[32m)[39m(B[m[?25l[?12l[?25h(B[0;1m[31m_(B[0m[32m)[39m(B[m[?25l[?12l[?25h(B[0;1m[31mp(B[0m[32m)[39m(B[m[?25l[?12l[?25h(B[0;1m[31md(B[0m[32m)[39m(B[m[?25l[?12l[?25h(B[0;1m[31mr(B[0m[32m)[39m(B[m[?25l[?12l[?25h(B[0;1m[31me(B[0m[32m)[39m(B[m[?25l[?12l[?25h [32m)[39m(B[m[?25l[?12l[?25h[32m=)[39m(B[m[?25l[?12l[?25h[32m==)[39m(B[m[?25l[?12l[?25h [32m)[39m(B[m[?25l[?12l[?25h[32m)[39m(B[m[K[?25l[?12l[?25h[32m)[39m(B[m[K[?25l[?12l[?25h [32m)[39m(B[m[?25l[?12l[?25h"[32m)[39m(B[m[?25l[?12l[?25h/[32m)[39m(B[m[?25l[?12l[?25hh[32m)[39m(B[m[?25l[?12l[?25ho[32m)[39m(B[m[?25l[?12l[?25hm[32m)[39m(B[m[?25l[?12l[?25he[32m)[39m(B[m[?25l[?12l[?25h[24G(B[0;1m[33m"/home"(B[0m[32m)[39m(B[m[?25l[?12l[?25h[C[?25l[?12l[?25h [?25l[?12l[?25h[32m][39m(B[m[?25l[?12l[?25h[26G[?25l[?12l[?25h[12;17H[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[1P[?25l[?12l[?25h[32m[(B[0;1m[31m$dir_pdre[39m(B[m [32m=[39m(B[m (B[0;1m[33m"/home"(B[0m[32m][12;12H[39m(B[m[?25l[?12l[?25h[C[?25l[?12l[?25h[17G[?25l[?12l[?25h[12;26H[?25l[?12l[?25h[13;9H[?25l[?12l[?25h[13G[?25l[?12l[?25h[19G[?25l[?12l[?25h[13G[?25l[?12l[?25h[?25l[?12l[?25h[12;26H[?25l[?12l[?25h[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l7[13;28r8[13dM[1;30r[13;1H[?12l[?25h[?25l[13;28r[28;1H
+[1;30r[12;32H[?12l[?25h[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h t[?25l[?12l[?25hh[?25l[?12l[?25he[?25l[?12l[?25h[32mthen[39m(B[m[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[32m;[39m(B[m [32mthen[33G[39m(B[m[?25l[?12l[?25h [?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l7[13;28r8[13dM[1;30r[13;1H[?12l[?25h[?25l[?12l[?25h[14d[?25l[?12l[?25h[14;16H[1K [32mfor[39m(B[m token [32min[39m(B[m (B[0;1m[33m"${campos[@]}"(B[0m[32m;[39m(B[m [32mdo[14;9H[39m(B[m[?25l[?12l[?25h[15d[?25l[?12l[?25h[16G[1K (B[0;1m[34mecho[35m -n[39m(B[m (B[0;1m[33m'|'[31m$token[15;17H[39m(B[m[?25l[?12l[?25h[16;13H[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[16G[1K [32mdone[39m(B[m[?25l[?12l[?25h[17d[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[16G[1K (B[0;1m[34mecho[39m(B[m (B[0;1m[33m'| '[17;17H[39m(B[m[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h [?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[18d[?25l[?12l[?25h[8G[42m[1K [49m(B[m[?25l[?12l[?25h[1K f[?25l[?12l[?25h[32mfi[39m(B[m[?25l7[19;28r8[19dM[1;30r[19;1H[?12l[?25h[?25l[28d(B[0;7mSave modified buffer?                                                                                                   [29;1H Y(B[m Yes[K[30d(B[0;7m N(B[m No  [30;16H (B[0;7m^C(B[m Cancel[K[28;23H[?12l[?25h[?25l[?12l[?25h[?25l[29d(B[0;7m^G(B[m Help[29;31H(B[0;7mM-D(B[m DOS Format[29;61H(B[0;7mM-A(B[m Append[29;91H(B[0;7mM-B(B[m Backup File[30d(B[0;7m^C(B[m Cancel[17G[14X[30;31H(B[0;7mM-M(B[m Mac Format[30;61H(B[0;7mM-P(B[m Prepend[30;91H(B[0;7m^T(B[m Browse[28d(B[0;7mFile Name to Write: sh_pswd.sh(B[m[?12l[?25h[?25l(B[0;7mt(B[m[?12l[?25h[?25l(B[0;7m (B[m[?12l[?25h[?25l[28;53H[1K (B[0;7m[ Writing... ](B[m[K[1;69H(B[0;7m [119G(B[m[28;52H(B[0;7m[ Wrote 20 lines ](B[m[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio5[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio5[00m$ nano sh_pswd.sh [5Pman dirname./sh_pswd.sh 
+[?2004l./sh_pswd.sh: line 11: syntax error near unexpected token `then'
+./sh_pswd.sh: line 11: `	if[$dir_pdre = "/home"]; then'
+[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio5[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio5[00m$ ./sh_pswd.sh [3@nano [C[C[C[C[C[C[C[C[C[C[C
+[?2004l[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;54H(B[0;7m[ Reading... ](B[m[28;52H(B[0;7m[ Read 20 lines ](B[m[H(B[0;7m  GNU nano 7.2                                           sh_pswd.sh                                                     [1;119H(B[m[29d(B[0;7m^G(B[m Help[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[29;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[30d(B[0;7m^X(B[m Exit[30;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[2d[36m#!/bin/bash[4d[32mwhile[39m(B[m IFS[32m=(B[0;1m[33m':'[39m(B[m [32mread(B[0;1m[35m -r[39m(B[m var1[32m;[5ddo[7;9H[39m(B[mIFS[32m=(B[0;1m[33m':'[39m(B[m [32mread(B[0;1m[35m -a[39m(B[m campos [32m<<<[39m(B[m (B[0;1m[31m$var1(B[0m[32m;[8;8H[39m[42m[1K[9;9H[49m(B[mhome [32m=[39m(B[m (B[0;1m[33m"${campos[5]}"[10;9H[39m(B[mdir_padre[32m=$([39m(B[mdirname (B[0;1m[33m"$home"(B[0m[32m)[12;9Hif[(B[0;1m[31m$dir_pdre[39m(B[m [32m=[39m(B[m (B[0;1m[33m"/home"(B[0m[32m];[39m(B[m [32mthen[14;17Hfor[39m(B[m token [32min[39m(B[m (B[0;1m[33m"${campos[@]}"(B[0m[32m;[39m(B[m [32mdo[15;17H(B[0;1m[34mecho[35m -n[39m(B[m (B[0;1m[33m'|'[31m$token[16;17H(B[0m[32mdone[17;17H(B[0;1m[34mecho[39m(B[m (B[0;1m[33m'| '[18;9H(B[0m[32mfi[20ddone[39m(B[m [32m<[39m(B[m/etc/passwd[2d[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25h[4d[?25l[?12l[?25h[5d[?25l[?12l[?25h[6d[?25l[?12l[?25h[7d[?25l[?12l[?25h[8d[?25l[?12l[?25h[9d[?25l[?12l[?25h[10d[?25l[?12l[?25h[11d[?25l[?12l[?25h[12d[?25l[?12l[?25h[12;9H[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[1;69H(B[0;7m*[119G(B[m[?12l[?25h[12;12H(B[0;1m[33m"$dir_pdre = "[39m(B[m/home"[32m];[39m(B[m [32mthen[12;13H[39m(B[m[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[28d[K[?12l[?25h[12;18H[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h(B[0;1m[33m"[39m(B[m [32m=[39m(B[m (B[0;1m[33m"/home"(B[0m[32m];[39m(B[m [32mthen[12;23H[39m(B[m[?25l[28d(B[0;7mSave modified buffer?                                                                                                   [29;1H Y(B[m Yes[K[30d(B[0;7m N(B[m No  [30;16H (B[0;7m^C(B[m Cancel[K[28;23H[?12l[?25h[?25l[29d(B[0;7m^G(B[m Help[29;31H(B[0;7mM-D(B[m DOS Format[29;61H(B[0;7mM-A(B[m Append[29;91H(B[0;7mM-B(B[m Backup File[30d(B[0;7m^C(B[m Cancel[17G[14X[30;31H(B[0;7mM-M(B[m Mac Format[30;61H(B[0;7mM-P(B[m Prepend[30;91H(B[0;7m^T(B[m Browse[28d(B[0;7mFile Name to Write: sh_pswd.sh(B[m[?12l[?25h[?25l[28;53H[1K (B[0;7m[ Writing... ](B[m[K[1;69H(B[0;7m [119G(B[m[28;52H(B[0;7m[ Wrote 20 lines ](B[m[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio5[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio5[00m$ nano sh_pswd.sh [3P./[C[C[C[C[C[C[C[C[C[C[C
+[?2004l./sh_pswd.sh: line 11: syntax error near unexpected token `then'
+./sh_pswd.sh: line 11: `	if["$dir_pdre" = "/home"]; then'
+[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio5[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio5[00m$ ./sh_pswd.sh [3@nano [C[C[C[C[C[C[C[C[C[C[C
+[?2004l[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;54H(B[0;7m[ Reading... ](B[m[28;52H(B[0;7m[ Read 20 lines ](B[m[H(B[0;7m  GNU nano 7.2                                           sh_pswd.sh                                                     [1;119H(B[m[29d(B[0;7m^G(B[m Help[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[29;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[30d(B[0;7m^X(B[m Exit[30;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[2d[36m#!/bin/bash[4d[32mwhile[39m(B[m IFS[32m=(B[0;1m[33m':'[39m(B[m [32mread(B[0;1m[35m -r[39m(B[m var1[32m;[5ddo[7;9H[39m(B[mIFS[32m=(B[0;1m[33m':'[39m(B[m [32mread(B[0;1m[35m -a[39m(B[m campos [32m<<<[39m(B[m (B[0;1m[31m$var1(B[0m[32m;[8;8H[39m[42m[1K[9;9H[49m(B[mhome [32m=[39m(B[m (B[0;1m[33m"${campos[5]}"[10;9H[39m(B[mdir_padre[32m=$([39m(B[mdirname (B[0;1m[33m"$home"(B[0m[32m)[12;9Hif[(B[0;1m[33m"$dir_pdre"[39m(B[m [32m=[39m(B[m (B[0;1m[33m"/home"(B[0m[32m];[39m(B[m [32mthen[14;17Hfor[39m(B[m token [32min[39m(B[m (B[0;1m[33m"${campos[@]}"(B[0m[32m;[39m(B[m [32mdo[15;17H(B[0;1m[34mecho[35m -n[39m(B[m (B[0;1m[33m'|'[31m$token[16;17H(B[0m[32mdone[17;17H(B[0;1m[34mecho[39m(B[m (B[0;1m[33m'| '[18;9H(B[0m[32mfi[20ddone[39m(B[m [32m<[39m(B[m/etc/passwd[2d[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25h[4d[?25l[?12l[?25h[5d[?25l[?12l[?25h[6d[?25l[?12l[?25h[7d[?25l[?12l[?25h[8d[?25l[?12l[?25h[9d[?25l[?12l[?25h[10d[?25l[?12l[?25h[11d[?25l[?12l[?25h[12d[?25l[?12l[?25h[12;9H[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[28d[K[?12l[?25h[12;17H[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h [?25l[?12l[?25h[C[?25l[1;69H(B[0;7m*[119G(B[m[?12l[?25h[12;24H[1P[?25l[?12l[?25h- (B[0;1m[33m"/home"(B[0m[32m];[39m(B[m [32mthen[12;25H[39m(B[m[?25l[?12l[?25h(B[0;1m[35m -e[39m(B[m (B[0;1m[33m"/home"(B[0m[32m];[39m(B[m [32mthen[12;26H[39m(B[m[?25l[?12l[?25h [32m-eq[39m(B[m (B[0;1m[33m"/home"(B[0m[32m];[39m(B[m [32mthen[12;27H[39m(B[m[?25l[28d(B[0;7mSave modified buffer?                                                                                                   [29;1H Y(B[m Yes[K[30d(B[0;7m N(B[m No  [30;16H (B[0;7m^C(B[m Cancel[K[28;23H[?12l[?25h[?25l[29d(B[0;7m^G(B[m Help[29;31H(B[0;7mM-D(B[m DOS Format[29;61H(B[0;7mM-A(B[m Append[29;91H(B[0;7mM-B(B[m Backup File[30d(B[0;7m^C(B[m Cancel[17G[14X[30;31H(B[0;7mM-M(B[m Mac Format[30;61H(B[0;7mM-P(B[m Prepend[30;91H(B[0;7m^T(B[m Browse[28d(B[0;7mFile Name to Write: sh_pswd.sh(B[m[?12l[?25h[?25l[28;53H[1K (B[0;7m[ Writing... ](B[m[K[1;69H(B[0;7m [119G(B[m[28;52H(B[0;7m[ Wrote 20 lines ](B[m[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio5[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio5[00m$ nano sh_pswd.sh 
+[?2004l[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;54H(B[0;7m[ Reading... ](B[m[28;52H(B[0;7m[ Read 20 lines ](B[m[H(B[0;7m  GNU nano 7.2                                           sh_pswd.sh                                                     [1;119H(B[m[29d(B[0;7m^G(B[m Help[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[29;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[30d(B[0;7m^X(B[m Exit[30;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[2d[36m#!/bin/bash[4d[32mwhile[39m(B[m IFS[32m=(B[0;1m[33m':'[39m(B[m [32mread(B[0;1m[35m -r[39m(B[m var1[32m;[5ddo[7;9H[39m(B[mIFS[32m=(B[0;1m[33m':'[39m(B[m [32mread(B[0;1m[35m -a[39m(B[m campos [32m<<<[39m(B[m (B[0;1m[31m$var1(B[0m[32m;[8;8H[39m[42m[1K[9;9H[49m(B[mhome [32m=[39m(B[m (B[0;1m[33m"${campos[5]}"[10;9H[39m(B[mdir_padre[32m=$([39m(B[mdirname (B[0;1m[33m"$home"(B[0m[32m)[12;9Hif[(B[0;1m[33m"$dir_pdre"[39m(B[m [32m-eq[39m(B[m (B[0;1m[33m"/home"(B[0m[32m];[39m(B[m [32mthen[14;17Hfor[39m(B[m token [32min[39m(B[m (B[0;1m[33m"${campos[@]}"(B[0m[32m;[39m(B[m [32mdo[15;17H(B[0;1m[34mecho[35m -n[39m(B[m (B[0;1m[33m'|'[31m$token[16;17H(B[0m[32mdone[17;17H(B[0;1m[34mecho[39m(B[m (B[0;1m[33m'| '[18;9H(B[0m[32mfi[20ddone[39m(B[m [32m<[39m(B[m/etc/passwd[2d[?12l[?25h[?25l[28d[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio5[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio5[00m$ nano sh_pswd.sh [3P./[C[C[C[C[C[C[C[C[C[C[C
+[?2004l./sh_pswd.sh: line 11: syntax error near unexpected token `then'
+./sh_pswd.sh: line 11: `	if["$dir_pdre" -eq "/home"]; then'
+[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio5[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio5[00m$ ./sh_pswd.sh [3@nano [C[C[C[C[C[C[C[C[C[C[C
+[?2004l[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;54H(B[0;7m[ Reading... ](B[m[28;52H(B[0;7m[ Read 20 lines ](B[m[H(B[0;7m  GNU nano 7.2                                           sh_pswd.sh                                                     [1;119H(B[m[29d(B[0;7m^G(B[m Help[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[29;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[30d(B[0;7m^X(B[m Exit[30;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[2d[36m#!/bin/bash[4d[32mwhile[39m(B[m IFS[32m=(B[0;1m[33m':'[39m(B[m [32mread(B[0;1m[35m -r[39m(B[m var1[32m;[5ddo[7;9H[39m(B[mIFS[32m=(B[0;1m[33m':'[39m(B[m [32mread(B[0;1m[35m -a[39m(B[m campos [32m<<<[39m(B[m (B[0;1m[31m$var1(B[0m[32m;[8;8H[39m[42m[1K[9;9H[49m(B[mhome [32m=[39m(B[m (B[0;1m[33m"${campos[5]}"[10;9H[39m(B[mdir_padre[32m=$([39m(B[mdirname (B[0;1m[33m"$home"(B[0m[32m)[12;9Hif[(B[0;1m[33m"$dir_pdre"[39m(B[m [32m-eq[39m(B[m (B[0;1m[33m"/home"(B[0m[32m];[39m(B[m [32mthen[14;17Hfor[39m(B[m token [32min[39m(B[m (B[0;1m[33m"${campos[@]}"(B[0m[32m;[39m(B[m [32mdo[15;17H(B[0;1m[34mecho[35m -n[39m(B[m (B[0;1m[33m'|'[31m$token[16;17H(B[0m[32mdone[17;17H(B[0;1m[34mecho[39m(B[m (B[0;1m[33m'| '[18;9H(B[0m[32mfi[20ddone[39m(B[m [32m<[39m(B[m/etc/passwd[2d[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25h[4d[?25l[?12l[?25h[5d[?25l[?12l[?25h[6d[?25l[?12l[?25h[7d[?25l[?12l[?25h[8d[?25l[?12l[?25h[9d[?25l[?12l[?25h[10d[?25l[?12l[?25h[11d[?25l[?12l[?25h[12d[?25l[?12l[?25h[12;9H[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[1;69H(B[0;7m*[119G(B[m[?12l[?25h[12;11H [32m[(B[0;1m[33m"$dir_pdre"[39m(B[m [32m-eq[39m(B[m (B[0;1m[33m"/home"(B[0m[32m];[39m(B[m [32mthen[12;12H[39m(B[m[?25l[28d(B[0;7mSave modified buffer?                                                                                                   [29;1H Y(B[m Yes[K[30d(B[0;7m N(B[m No  [30;16H (B[0;7m^C(B[m Cancel[K[28;23H[?12l[?25h[?25l[29d(B[0;7m^G(B[m Help[29;31H(B[0;7mM-D(B[m DOS Format[29;61H(B[0;7mM-A(B[m Append[29;91H(B[0;7mM-B(B[m Backup File[30d(B[0;7m^C(B[m Cancel[17G[14X[30;31H(B[0;7mM-M(B[m Mac Format[30;61H(B[0;7mM-P(B[m Prepend[30;91H(B[0;7m^T(B[m Browse[28d(B[0;7mFile Name to Write: sh_pswd.sh(B[m[?12l[?25h[?25l[28;53H[1K (B[0;7m[ Writing... ](B[m[K[1;69H(B[0;7m [119G(B[m[28;52H(B[0;7m[ Wrote 20 lines ](B[m[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio5[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio5[00m$ nano sh_pswd.sh [3P./[C[C[C[C[C[C[C[C[C[C[C
+[?2004l./sh_pswd.sh: line 8: home: command not found
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 8: home: command not found
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 8: home: command not found
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 8: home: command not found
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 8: home: command not found
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 8: home: command not found
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 8: home: command not found
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 8: home: command not found
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 8: home: command not found
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 8: home: command not found
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 8: home: command not found
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 8: home: command not found
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 8: home: command not found
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 8: home: command not found
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 8: home: command not found
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 8: home: command not found
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 8: home: command not found
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 8: home: command not found
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 8: home: command not found
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 8: home: command not found
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 8: home: command not found
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 8: home: command not found
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 8: home: command not found
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 8: home: command not found
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 8: home: command not found
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 8: home: command not found
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 8: home: command not found
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 8: home: command not found
+./sh_pswd.sh: line 11: [: missing `]'
+[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio5[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio5[00m$ ./sh_pswd.sh [3@nano [C[C[C[C[C[C[C[C[C[C[C
+[?2004l[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;54H(B[0;7m[ Reading... ](B[m[28;52H(B[0;7m[ Read 20 lines ](B[m[H(B[0;7m  GNU nano 7.2                                           sh_pswd.sh                                                     [1;119H(B[m[29d(B[0;7m^G(B[m Help[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[29;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[30d(B[0;7m^X(B[m Exit[30;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[2d[36m#!/bin/bash[4d[32mwhile[39m(B[m IFS[32m=(B[0;1m[33m':'[39m(B[m [32mread(B[0;1m[35m -r[39m(B[m var1[32m;[5ddo[7;9H[39m(B[mIFS[32m=(B[0;1m[33m':'[39m(B[m [32mread(B[0;1m[35m -a[39m(B[m campos [32m<<<[39m(B[m (B[0;1m[31m$var1(B[0m[32m;[8;8H[39m[42m[1K[9;9H[49m(B[mhome [32m=[39m(B[m (B[0;1m[33m"${campos[5]}"[10;9H[39m(B[mdir_padre[32m=$([39m(B[mdirname (B[0;1m[33m"$home"(B[0m[32m)[12;9Hif[39m(B[m [32m[(B[0;1m[33m"$dir_pdre"[39m(B[m [32m-eq[39m(B[m (B[0;1m[33m"/home"(B[0m[32m];[39m(B[m [32mthen[14;17Hfor[39m(B[m token [32min[39m(B[m (B[0;1m[33m"${campos[@]}"(B[0m[32m;[39m(B[m [32mdo[15;17H(B[0;1m[34mecho[35m -n[39m(B[m (B[0;1m[33m'|'[31m$token[16;17H(B[0m[32mdone[17;17H(B[0;1m[34mecho[39m(B[m (B[0;1m[33m'| '[18;9H(B[0m[32mfi[20ddone[39m(B[m [32m<[39m(B[m/etc/passwd[2d[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25h[4d[?25l[?12l[?25h[5d[?25l[?12l[?25h[6d[?25l[?12l[?25h[7d[?25l[?12l[?25h[8d[?25l[?12l[?25h[9d[?25l[?12l[?25h[10d[?25l[?12l[?25h[A[?25l[?12l[?25h[9;9H[?25l[?12l[?25hh[?25l[?12l[?25ho[?25l[?12l[?25hm[?25l[?12l[?25he[?25l[?12l[?25h [?25l[?12l[?25h[C[?25l[?12l[?25h [?25l[?12l[?25h[C[?25l[1;69H(B[0;7m*[119G(B[m[?12l[?25h[9;16H(B[0;1m[31m${campos[5]}[39m(B[m"[K[9;16H[?25l[28d[K[?12l[?25h[9;17H[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h"[?25l[?12l[?25h[10d[?25l[?12l[?25h[10;9H[?25l[?12l[?25h[?25l[?12l[?25h[9;29H[?25l[?12l[?25h [?25l[28d(B[0;7mSave modified buffer?                                                                                                   [29;1H Y(B[m Yes[K[30d(B[0;7m N(B[m No  [30;16H (B[0;7m^C(B[m Cancel[K[28;23H[?12l[?25h[?25l[29d(B[0;7m^G(B[m Help[29;31H(B[0;7mM-D(B[m DOS Format[29;61H(B[0;7mM-A(B[m Append[29;91H(B[0;7mM-B(B[m Backup File[30d(B[0;7m^C(B[m Cancel[17G[14X[30;31H(B[0;7mM-M(B[m Mac Format[30;61H(B[0;7mM-P(B[m Prepend[30;91H(B[0;7m^T(B[m Browse[28d(B[0;7mFile Name to Write: sh_pswd.sh(B[m[?12l[?25h[?25l[28;53H[1K (B[0;7m[ Writing... ](B[m[K[1;69H(B[0;7m [119G(B[m[28;52H(B[0;7m[ Wrote 20 lines ](B[m[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio5[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio5[00m$ nano sh_pswd.sh [3P./[C[C[C[C[C[C[C[C[C[C[C
+[?2004l./sh_pswd.sh: line 8: home: command not found
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 8: home: command not found
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 8: home: command not found
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 8: home: command not found
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 8: home: command not found
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 8: home: command not found
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 8: home: command not found
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 8: home: command not found
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 8: home: command not found
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 8: home: command not found
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 8: home: command not found
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 8: home: command not found
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 8: home: command not found
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 8: home: command not found
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 8: home: command not found
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 8: home: command not found
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 8: home: command not found
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 8: home: command not found
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 8: home: command not found
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 8: home: command not found
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 8: home: command not found
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 8: home: command not found
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 8: home: command not found
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 8: home: command not found
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 8: home: command not found
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 8: home: command not found
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 8: home: command not found
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 8: home: command not found
+./sh_pswd.sh: line 11: [: missing `]'
+[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio5[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio5[00m$ ./sh_pswd.sh [3@nano [C[C[C[C[C[C[C[C[C[C[C[3P./[C[C[C[C[C[C[C[C[C[C[C[3@nano [C[C[C[C[C[C[C[C[C[C[C
+[?2004l[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;54H(B[0;7m[ Reading... ](B[m[28;52H(B[0;7m[ Read 20 lines ](B[m[H(B[0;7m  GNU nano 7.2                                           sh_pswd.sh                                                     [1;119H(B[m[29d(B[0;7m^G(B[m Help[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[29;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[30d(B[0;7m^X(B[m Exit[30;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[2d[36m#!/bin/bash[4d[32mwhile[39m(B[m IFS[32m=(B[0;1m[33m':'[39m(B[m [32mread(B[0;1m[35m -r[39m(B[m var1[32m;[5ddo[7;9H[39m(B[mIFS[32m=(B[0;1m[33m':'[39m(B[m [32mread(B[0;1m[35m -a[39m(B[m campos [32m<<<[39m(B[m (B[0;1m[31m$var1(B[0m[32m;[8;8H[39m[42m[1K[9;9H[49m(B[mhome [32m=[39m(B[m (B[0;1m[31m${campos[5]}[10;9H[39m(B[mdir_padre[32m=$([39m(B[mdirname (B[0;1m[33m"$home"(B[0m[32m)[12;9Hif[39m(B[m [32m[(B[0;1m[33m"$dir_pdre"[39m(B[m [32m-eq[39m(B[m (B[0;1m[33m"/home"(B[0m[32m];[39m(B[m [32mthen[14;17Hfor[39m(B[m token [32min[39m(B[m (B[0;1m[33m"${campos[@]}"(B[0m[32m;[39m(B[m [32mdo[15;17H(B[0;1m[34mecho[35m -n[39m(B[m (B[0;1m[33m'|'[31m$token[16;17H(B[0m[32mdone[17;17H(B[0;1m[34mecho[39m(B[m (B[0;1m[33m'| '[18;9H(B[0m[32mfi[20ddone[39m(B[m [32m<[39m(B[m/etc/passwd[2d[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25h[4d[?25l[?12l[?25h[5d[?25l[?12l[?25h[6d[?25l[?12l[?25h[7d[?25l[?12l[?25h[8d[?25l[?12l[?25h[9d[?25l[?12l[?25h[10d[?25l[?12l[?25h[11d[?25l[?12l[?25h[12d[?25l[?12l[?25h[13d[?25l[?12l[?25h[14d[?25l[?12l[?25h[15d[?25l[?12l[?25h[16d[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[12;9H[?25l[28d[K[?12l[?25h[12;10H[?25l[?12l[?25h[C[?25l[?12l[?25h [?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h [?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h [?25l[?12l[?25h[?25l[1;69H(B[0;7m*[119G(B[m[?12l[?25h[12;24H(B[0;1m[35m -e[39m(B[m[1P[?25l[?12l[?25h -[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[32m=[39m(B[m (B[0;1m[33m"/home"(B[0m[32m];[39m(B[m [32mthen[12;26H[39m(B[m[?25l[?12l[?25h[A[?25l[?12l[?25h[10;26H[?25l[?12l[?25h[A[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h"(B[0;1m[31m${campos[5]}[9;17H[39m(B[m[?25l[?12l[?25h[?25l[?12l[?25h[1P[?25l[?12l[?25h[10d[?25l[?12l[?25h[A[?25l[?12l[?25h[?25l[?12l[?25h[1P[?25l[?12l[?25h[C[?25l[?12l[?25h"[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[10d[?25l[?12l[?25h[9;27H[?25l[?12l[?25h[9;14H(B[0;1m[33m"${campos[5]}"[39m(B[m[?25l[28d(B[0;7mSave modified buffer?                                                                                                   [29;1H Y(B[m Yes[K[30d(B[0;7m N(B[m No  [30;16H (B[0;7m^C(B[m Cancel[K[28;23H[?12l[?25h[?25l[29d(B[0;7m^G(B[m Help[29;31H(B[0;7mM-D(B[m DOS Format[29;61H(B[0;7mM-A(B[m Append[29;91H(B[0;7mM-B(B[m Backup File[30d(B[0;7m^C(B[m Cancel[17G[14X[30;31H(B[0;7mM-M(B[m Mac Format[30;61H(B[0;7mM-P(B[m Prepend[30;91H(B[0;7m^T(B[m Browse[28d(B[0;7mFile Name to Write: sh_pswd.sh(B[m[?12l[?25h[?25l[28;53H[1K (B[0;7m[ Writing... ](B[m[K[1;69H(B[0;7m [119G(B[m[28;52H(B[0;7m[ Wrote 20 lines ](B[m[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio5[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio5[00m$ nano sh_pswd.sh [3P./[C[C[C[C[C[C[C[C[C[C[C
+[?2004l./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 11: [: missing `]'
+[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio5[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio5[00m$ ./sh_pswd.sh [3@nano [C[C[C[C[C[C[C[C[C[C[C
+[?2004l[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;54H(B[0;7m[ Reading... ](B[m[28;52H(B[0;7m[ Read 20 lines ](B[m[H(B[0;7m  GNU nano 7.2                                           sh_pswd.sh                                                     [1;119H(B[m[29d(B[0;7m^G(B[m Help[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[29;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[30d(B[0;7m^X(B[m Exit[30;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[2d[36m#!/bin/bash[4d[32mwhile[39m(B[m IFS[32m=(B[0;1m[33m':'[39m(B[m [32mread(B[0;1m[35m -r[39m(B[m var1[32m;[5ddo[7;9H[39m(B[mIFS[32m=(B[0;1m[33m':'[39m(B[m [32mread(B[0;1m[35m -a[39m(B[m campos [32m<<<[39m(B[m (B[0;1m[31m$var1(B[0m[32m;[8;8H[39m[42m[1K[9;9H[49m(B[mhome[32m=(B[0;1m[33m"${campos[5]}"[10;9H[39m(B[mdir_padre[32m=$([39m(B[mdirname (B[0;1m[33m"$home"(B[0m[32m)[12;9Hif[39m(B[m [32m[(B[0;1m[33m"$dir_pdre"[39m(B[m [32m=[39m(B[m (B[0;1m[33m"/home"(B[0m[32m];[39m(B[m [32mthen[14;17Hfor[39m(B[m token [32min[39m(B[m (B[0;1m[33m"${campos[@]}"(B[0m[32m;[39m(B[m [32mdo[15;17H(B[0;1m[34mecho[35m -n[39m(B[m (B[0;1m[33m'|'[31m$token[16;17H(B[0m[32mdone[17;17H(B[0;1m[34mecho[39m(B[m (B[0;1m[33m'| '[18;9H(B[0m[32mfi[20ddone[39m(B[m [32m<[39m(B[m/etc/passwd[2d[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25h[4d[?25l[?12l[?25h[5d[?25l[?12l[?25h[6d[?25l[?12l[?25h[7d[?25l[?12l[?25h[8d[?25l[?12l[?25h[9d[?25l[?12l[?25h[10d[?25l[?12l[?25h[11d[?25l[?12l[?25h[12d[?25l[?12l[?25h[13d[?25l[?12l[?25h[14d[?25l[?12l[?25h[A[?25l[?12l[?25h[14d[?25l[?12l[?25h[14;9H[?25l[?12l[?25h[14;17H[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[28d[K[?12l[?25h[14;21H[?25l[?12l[?25ht[?25l[?12l[?25h[A[?25l[?12l[?25h[12;22H[?25l[?12l[?25h[A[?25l[?12l[?25h[10;22H[?25l[?12l[?25h[11d[?25l[?12l[?25h[12;22H[?25l[?12l[?25h[C[?25l[1;69H(B[0;7m*[119G(B[m[?12l[?25h[12;23H(B[0;1m[33m = "[39m(B[m/home"[1P[12;23H[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h(B[0;1m[31m$dir_pdre[39m(B[m [32m=[39m(B[m (B[0;1m[33m"/home"[39m(B[m[1P[12;13H[?25l[28d(B[0;7mSave modified buffer?                                                                                                   [29;1H Y(B[m Yes[K[30d(B[0;7m N(B[m No  [30;16H (B[0;7m^C(B[m Cancel[K[28;23H[?12l[?25h[?25l[29d(B[0;7m^G(B[m Help[29;31H(B[0;7mM-D(B[m DOS Format[29;61H(B[0;7mM-A(B[m Append[29;91H(B[0;7mM-B(B[m Backup File[30d(B[0;7m^C(B[m Cancel[17G[14X[30;31H(B[0;7mM-M(B[m Mac Format[30;61H(B[0;7mM-P(B[m Prepend[30;91H(B[0;7m^T(B[m Browse[28d(B[0;7mFile Name to Write: sh_pswd.sh(B[m[?12l[?25h[?25l[28;53H[1K (B[0;7m[ Writing... ](B[m[K[1;69H(B[0;7m [119G(B[m[28;52H(B[0;7m[ Wrote 20 lines ](B[m[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio5[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio5[00m$ nano sh_pswd.sh [3P./[C[C[C[C[C[C[C[C[C[C[C
+[?2004l./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 11: [: missing `]'
+./sh_pswd.sh: line 11: [: missing `]'
+[?2004h]0;david@DESKTOP-2A6V8US: ~/main_repos/SO/p1/ejercicio5[01;32mdavid@DESKTOP-2A6V8US[00m:[01;34m~/main_repos/SO/p1/ejercicio5[00m$ exit
+[?2004lexit
+
+Script done on 2025-10-10 13:27:28+02:00 [COMMAND_EXIT_CODE="0"]
