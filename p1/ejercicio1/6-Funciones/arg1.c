@@ -17,6 +17,7 @@ int main(void)
 	struct _complex_ yc = {.re = 3.0, .im = 1.0};
 	struct _complex_ zc;
 
+	/* Paso por valor. Se pasan copias de las estructuras. */
 	zc = sumC(xc, yc);
 
 	int total = sum(x, y);
@@ -26,16 +27,23 @@ int main(void)
 	return 0;
 }
 
+/* Suma dos enteros pasados por valor.
+ * Las modificaciones locales a x e y no afectan al llamante.
+ */
 int sum(int x, int y)
 {
 	int c;
 	c = x +y;
+	/* Modificar x e y aquí solo afecta a las copias locales, no a las variables del main. */
 	x = 7;
 	y =3;
 	return c;
 }
 
 
+/* Suma dos números complejos pasados por valor.
+ * Retorna una nueva estructura con el resultado.
+ */
 struct _complex_  sumC( struct _complex_ a,  struct _complex_ b)
 {
 	struct _complex_ r;
@@ -43,6 +51,7 @@ struct _complex_  sumC( struct _complex_ a,  struct _complex_ b)
 	r.im = a.im + b.im;
 
 	// We modify the first argument
+	/* Modifica la copia local 'a', no la estructura original 'xc' del main. */
 	a.re = 12.5;
 	a.im = 13.4;
 	return r;

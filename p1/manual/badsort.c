@@ -17,9 +17,16 @@
 /*  17  */      int i = 0, j = 0;
 /*  18  */      int s = 1;
 /*  19  */  
+/*  20  */      /* Algoritmo de ordenación (parece Bubble Sort).
+/*  21  */       * Itera mientras haya intercambios (s != 0) y no hayamos recorrido todo.
+/*  22  */       */
 /*  20  */      for(; i < n & s != 0; i++) {
 /*  21  */              s = 0;
 /*  22  */              for(j = 0; j < n; j++) {
+/*  23  */                      /* Comparación de claves.
+/*  24  */                       * OJO: Aquí hay un posible acceso fuera de límites si j alcanza n-1,
+/*  25  */                       * ya que a[j+1] accedería a a[n], que no existe.
+/*  26  */                       */
 /*  23  */                      if(a[j].key > a[j+1].key) {
 /*  24  */                              item t = a[j];
 /*  25  */                              a[j] = a[j+1];

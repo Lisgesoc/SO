@@ -8,10 +8,17 @@ int main(int argc,char* argv[])
 
   printf("Hello ...%d\n", VAR);
 
+  /* Iteramos sobre los argumentos pasados al programa.
+   * argc: cuenta de argumentos.
+   * argv: vector de argumentos (cadenas).
+   */
   if( argc >= 1 )
     for( i=0; i < argc; i++)
         printf("Argument #%d: %s\n",i,argv[i]);	
 
+  /* exit(0) termina el proceso con estado de éxito.
+   * Equivalente a return 0 en main.
+   */
   exit(0);
 }
 

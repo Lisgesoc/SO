@@ -15,6 +15,9 @@ void imprimeArray(int v[],int size)
 // function that copies the contents of a source array in a destination array
 void copyArray(int src[],int dst[],int size)
 {
+	/* Copia elemento a elemento.
+	 * En C, los arrays no se pueden asignar directamente (dst = src no copia contenido).
+	 */
  	for(int i=0;i<size;i++){
 		dst[i]=src[i];
 	}
@@ -23,6 +26,7 @@ void copyArray(int src[],int dst[],int size)
 
 int main()
 {
+	/* Inicialización de array en la declaración. */
 	int A[N] = {4,3,8,5,6,9,0,1,7,2};
 	int B[N];
 

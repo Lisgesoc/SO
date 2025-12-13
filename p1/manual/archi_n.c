@@ -4,7 +4,10 @@
 
 int main(void)
 {
+	/* Imprime el valor de VAR. */
 	printf("Hello ...%d\n", VAR);
+	
+	/* Termina el programa explícitamente. */
 	exit(0);
 }
 

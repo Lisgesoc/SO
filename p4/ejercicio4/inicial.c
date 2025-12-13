@@ -11,6 +11,10 @@
 
 int fd_glob;
 
+/* Manejador de señal SIGUSR1.
+ * Escribe "00000" en el archivo global fd_glob.
+ * Usamos write (async-signal-safe) en lugar de funciones de stdio.
+ */
 void handler(){
     write(fd_glob,"00000",5);
 }
@@ -22,10 +26,12 @@ int main(void)
     char buffer[6];
     int id=getpid();
 
+    /* Abrimos/Creamos un archivo para salida. */
     fd1 = open("output.txt", O_CREAT | O_TRUNC | O_RDWR, S_IRUSR | S_IWUSR);
     write(fd1, "00000", 5);
     //signal(SIGUSR1,handler);
 
+    /* Configuración de señal SIGUSR1. */
     struct sigaction sa;
     memset(&sa,0,sizeof(sa));// necesita la libreria string
     sa.sa_handler=handler;
@@ -38,9 +44,16 @@ int main(void)
         if (fork() == 0) {
             /* Child */
             sprintf(buffer, "%d", i*11111);
+            /* El hijo escribe en una posición específica calculada.
+             * lseek mueve el puntero del archivo.
+             * OJO: Los descriptores de archivo se comparten entre padre e hijo,
+             * pero el puntero de posición (offset) también se comparte si no se tiene cuidado.
+             * Aquí parece que se busca escribir en zonas disjuntas.
+             */
             lseek(fd1, 5+(i-1)*10, SEEK_SET);
             write(fd1, buffer, 5);
             close(fd1);
+            /* Notifica al padre (o a sí mismo? id es el pid del padre original) */
             kill(id,SIGUSR1);
             exit(0);
         } else {
@@ -54,6 +67,7 @@ int main(void)
 	//wait for all childs to finish
     while (wait(NULL) != -1);
 
+    /* Leemos y mostramos el contenido final del archivo. */
     lseek(fd1, 0, SEEK_SET);
     printf("File contents are:\n");
     while (read(fd1, &c, 1) > 0)

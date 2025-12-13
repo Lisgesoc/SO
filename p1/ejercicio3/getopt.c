@@ -48,12 +48,15 @@ int main(int argc, char *argv[])
 
 	progname = argv[0];
 
-	/* Initialize default values for options */
+	/* Inicialización de valores por defecto para las opciones. */
 	options.par_mode = ODD;
 	options.lenght= 10;
 	options.title = NULL;
 
-	/* Parse command-line options */
+	/* Parseo de opciones de línea de comandos con getopt.
+	 * "hel:" indica que buscamos las opciones -h, -e, y -l.
+	 * Los dos puntos ':' después de 'l' indican que -l requiere un argumento.
+	 */
 	while((opt = getopt(argc, argv, "hel: ")) != -1) {
 		switch(opt) {
 		case 'h':
@@ -63,29 +66,41 @@ int main(int argc, char *argv[])
 			options.par_mode = EVEN;
 			break;
 		case 'l':
+			/* optarg contiene el argumento de la opción actual (si lo requiere).
+			 * optind es el índice del siguiente elemento a procesar en argv.
+			 */
 			if (optind >= argc) {
+				// Nota: getopt maneja internamente la falta de argumentos si se configura,
+				// pero aquí se hace una comprobación manual adicional o redundante.
 				fprintf(stderr, "Option -l requires an argument\n");
 				usage();
 				exit(EXIT_FAILURE);
 			}	
-			options.lenght = atoi(optarg);
+			options.lenght = atoi(optarg); // Convertimos el argumento a entero
 			break;
 		default:
 			break;
 		}
 	}
 
-	/* There should be one extra argument (the title of the sequence) */
+	/* Se espera un argumento extra (el título) que no es una opción (no empieza por -).
+	 * optind apunta al primer argumento que no es una opción tras el bucle getopt.
+	 */
 	if (optind >= argc) {
 		fprintf(stderr, "Invalid title\n");
 		usage();
 		exit(EXIT_FAILURE);
 	}
+	
+	/* Asignamos el título.
+	 * En este caso, el código original tomaba argv[argc-1], asumiendo que es el último.
+	 * Lo correcto tras getopt suele ser usar argv[optind].
+	 */
 	options.title = argv[argc-1];
 	/* Fill options.title with the corresponding element of argv */
 	// options.title = argv[xxxx];
 
-    /* Call display_numbers */
+    /* Llamada a la función principal con las opciones parseadas. */
 	display_numbers (options.lenght, options.par_mode, options.title);
 	return 0;
 }

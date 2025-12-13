@@ -44,6 +44,7 @@ passwd_entry_t* parse_passwd(struct options* options, int* nr_entries)
 	int cur_line;
 
 	printf("DEBUG: Abriendo archivo: %s\n", options->infile);
+	/* Abrimos el archivo de contraseñas (usualmente /etc/passwd) en modo lectura. */
 	if ((passwd=fopen(options->infile,"r"))==NULL) {
 		fprintf(stderr, "/etc/passwd could not be opened: ");
 		perror(NULL);
@@ -53,6 +54,7 @@ passwd_entry_t* parse_passwd(struct options* options, int* nr_entries)
 
 
 	/* Figure out number of lines */
+	/* Leemos línea a línea para contar cuántas entradas válidas hay. */
 	while (fgets(line, MAX_PASSWD_LINE + 1, passwd) != NULL){
 		line_count++;
 		/* Discard lines that begin with # */
@@ -61,8 +63,10 @@ passwd_entry_t* parse_passwd(struct options* options, int* nr_entries)
 	}
 
 	/* Rewind position indicator*/
+	/* Rebobinamos el archivo al principio para volver a leerlo y parsearlo. */
 	fseek(passwd,0,SEEK_SET);
 
+	/* Reservamos memoria para el array de estructuras. */
 	entries=malloc(sizeof(passwd_entry_t)*entry_count);
 	/* zero fill the array of structures */
 	memset(entries,0,sizeof(passwd_entry_t)*entry_count);
@@ -83,6 +87,9 @@ passwd_entry_t* parse_passwd(struct options* options, int* nr_entries)
 		token_id=LOGIN_NAME_IDX;
 		cur_entry=&entries[entry_idx];
 
+		/* strsep separa la cadena 'lineptr' usando el delimitador ":".
+		 * Es muy útil para parsear archivos CSV o similares como /etc/passwd.
+		 */
 		while((token = strsep(&lineptr, ":"))!=NULL) {
 			switch(token_id) {
 			case LOGIN_NAME_IDX:
