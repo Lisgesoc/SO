@@ -432,4 +432,31 @@ int main(int argc, char *argv[])
 - Estructuras     : Definición y uso.
                     -> p2/ejercicio3/student-records.c (struct student)
                     -> p5/disco.c (struct client)
+
+9. CONCURRENCIA (POSIX)
+-----------------------
+- shm_open()      : Memoria compartida.
+                    -> p6/cocinero.c
+                    -> p6/salvajes.c
+- mmap()          : Mapeo de memoria.
+                    -> p6/cocinero.c
+                    -> p6/salvajes.c
+- sem_open()      : Semáforos con nombre.
+                    -> p6/cocinero.c
+                    -> p6/salvajes.c
+- sem_wait/post() : Operaciones P/V.
+                    -> p6/cocinero.c
+                    -> p6/salvajes.c
+
+10. ENLACES
+-----------
+- ln (comando)    : Creación de enlaces.
+                    -> p3/prepara_ficheros.sh
+- lstat()         : Info de enlaces simbólicos.
+                    -> p3/ejercicio2/copy2.c
+                    -> p3/ejercicio4/espacio.c
+- readlink()      : Leer destino de enlace.
+                    -> p3/ejercicio2/copy2.c
+- symlink()       : Crear enlace simbólico.
+                    -> p3/ejercicio2/copy2.c
 */

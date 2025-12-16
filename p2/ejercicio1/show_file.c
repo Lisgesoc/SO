@@ -4,6 +4,28 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <unistd.h>
+
+/*
+ * INFO SOBRE ENLACES (LINKS)
+ * --------------------------
+ * Comandos utilizados para crear enlaces (ver p3/prepara_ficheros.sh):
+ *   ln -s "fichero1" "enlaceS"  -> Crea un enlace simbólico (soft link) llamado "enlaceS" que apunta a "fichero1".
+ *   ln "fichero2" "enlaceH"     -> Crea un enlace físico (hard link) llamado "enlaceH" que apunta al mismo inodo que "fichero2".
+ *
+ * Diferencias clave:
+ *   - Hard Link: Apunta al mismo inodo. Si borras el original, el enlace sigue funcionando (el contenido persiste hasta que el contador de enlaces del inodo llega a 0).
+ *                No se pueden hacer hard links a directorios (normalmente) ni entre distintos sistemas de ficheros.
+ *   - Soft Link: Es un fichero especial que contiene la ruta al fichero destino. Si borras el original, el enlace queda roto.
+ *                Puede apuntar a directorios y cruzar sistemas de ficheros.
+ *
+ * System calls relacionadas:
+ *   - link(oldpath, newpath): Crea un hard link.
+ *   - symlink(target, linkpath): Crea un soft link.
+ *   - unlink(pathname): Borra un nombre del sistema de ficheros (decrementa contador de enlaces).
+ *   - lstat(pathname, statbuf): Como stat, pero si es un enlace simbólico, devuelve info del enlace mismo, no del destino.
+ *   - readlink(pathname, buf, bufsiz): Lee el contenido de un enlace simbólico (la ruta a la que apunta).
+ */
+
 //CON FOPEN Y FREAD Y FWRITE
 /*
 int main(int argc, char* argv[]) {
